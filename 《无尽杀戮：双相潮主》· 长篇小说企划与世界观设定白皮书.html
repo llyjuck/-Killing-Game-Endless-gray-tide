@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0164)https://bhp9ql9suum27.space.mcode.cn/#%E4%B8%89%E4%B8%BB%E8%A7%92%E9%9D%A2%E6%9D%BF%E4%B8%8E%E5%8F%8C%E7%9B%B8%E9%AA%A8%E7%BA%B9%E5%8D%87%E7%BA%A7%E4%BD%93%E7%B3%BB -->
+<html lang="zh-CN" data-theme="light" data-immersive-translate-page-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《无尽杀戮：双相潮主》· 长篇小说企划与世界观设定白皮书</title>
+<meta name="description" content="《无尽杀戮：双相潮主》长篇小说企划：世界观底层逻辑、双相灰雾灾变规则、九阶双生骨纹升级体系、核心人物矩阵与四卷主线大纲">
+<meta property="og:title" content="《无尽杀戮：双相潮主》· 长篇小说企划与世界观设定白皮书">
+<meta property="og:description" content="男频末世升级流 × 系统流 × 异能觉醒 × 铁血霸权 × 崇高救世。完整世界观设定与四卷主线规划。">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e0533f'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23ffffff'%3E%E7%81%AB%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0d12; --bg-soft:#11141c; --bg-elev:#161a24; --bg-hover:#1c2130;
+  --fg:#e6e8ef; --fg-dim:#a6adbf; --fg-mute:#727b91;
+  --line:#232838; --line-soft:#1b2030;
+  --accent:#e0533f; --accent-soft:rgba(224,83,63,.14); --accent-2:#4aa8ff;
+  --mark:rgba(224,83,63,.28);
+  /* Mermaid 图形配色（CSS 变量统一管理，随主题切换） */
+  --mg-node-bg:#161a24; --mg-node-border:#3a4254; --mg-fg:#c8cede;
+  --mg-edge:#5c6579; --mg-edge-bg:#11141c;
+  --mg-cluster-bg:#11141c; --mg-cluster-border:#232838;
+  --mg-event-bg:#1b202c;
+  --mg-sec-0-bg:#2a1410; --mg-sec-0-fg:#f0c4b6;
+  --mg-sec-1-bg:#341915; --mg-sec-1-fg:#e8b3a3;
+  --mg-sec-2-bg:#3f1f1a; --mg-sec-2-fg:#dfa290;
+  --mg-sec-3-bg:#4a2620; --mg-sec-3-fg:#d6917d;
+  --mg-sec-4-bg:#55302a; --mg-sec-4-fg:#cd8070;
+  --radius:12px; --sidebar-w:240px; --toc-w:228px; --topbar-h:58px;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --mono:"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+html[data-theme="light"]{
+  --bg:#f7f7f5; --bg-soft:#fff; --bg-elev:#fff; --bg-hover:#f0efec;
+  --fg:#1c1f28; --fg-dim:#4d5464; --fg-mute:#7b8394;
+  --line:#e2e1dc; --line-soft:#eceae5;
+  --accent:#c9402c; --accent-soft:rgba(201,64,44,.1); --accent-2:#1668c9;
+  --mark:rgba(201,64,44,.2);
+  --mg-node-bg:#ffffff; --mg-node-border:#c9c7c0; --mg-fg:#3d4353;
+  --mg-edge:#9aa0ad; --mg-edge-bg:#f7f7f5;
+  --mg-cluster-bg:#fffefb; --mg-cluster-border:#e2e1dc;
+  --mg-event-bg:#f1efea;
+  --mg-sec-0-bg:#f7e3dd; --mg-sec-0-fg:#8c2f20;
+  --mg-sec-1-bg:#f2d5cd; --mg-sec-1-fg:#9a3a29;
+  --mg-sec-2-bg:#ecc7bc; --mg-sec-2-fg:#a84533;
+  --mg-sec-3-bg:#e6b9ab; --mg-sec-3-fg:#b6503d;
+  --mg-sec-4-bg:#dfab9b; --mg-sec-4-fg:#c25c46;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--topbar-h) + 16px)}
+body{
+  margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+  font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:100;transition:width .1s linear}
+
+/* topbar */
+.topbar{
+  position:sticky;top:0;z-index:60;height:var(--topbar-h);
+  display:flex;align-items:center;gap:14px;padding:0 18px;
+  background:color-mix(in srgb,var(--bg) 86%,transparent);
+  backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand-mark{
+  width:30px;height:30px;flex:none;display:grid;place-items:center;border-radius:8px;
+  background:linear-gradient(135deg,var(--accent),#7a2f22);color:#fff;
+  font-family:var(--serif);font-weight:700;font-size:16px;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.brand-text strong{font-size:15px;letter-spacing:.02em}
+.brand-text em{font-style:normal;font-size:11.5px;color:var(--fg-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+.icon-btn{
+  display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 10px;
+  background:transparent;border:1px solid var(--line);border-radius:9px;color:var(--fg-dim);
+  cursor:pointer;font-size:13px;font-family:inherit;transition:.16s;
+}
+.icon-btn:hover{background:var(--bg-hover);color:var(--fg);border-color:var(--fg-mute)}
+.btn-label{font-size:13px}
+.menu-btn{display:none}
+
+/* layout */
+.layout{display:flex;align-items:flex-start;max-width:1440px;margin:0 auto}
+.sidebar{
+  width:var(--sidebar-w);flex:none;position:sticky;top:var(--topbar-h);
+  height:calc(100vh - var(--topbar-h));overflow-y:auto;
+  padding:22px 14px 26px 20px;border-right:1px solid var(--line-soft);
+}
+.nav-group{margin-bottom:22px}
+.nav-group-title{
+  font-size:11.5px;letter-spacing:.14em;color:var(--fg-mute);
+  text-transform:uppercase;margin:0 0 8px 10px;font-weight:600;
+}
+.nav-group ul{list-style:none;margin:0;padding:0}
+.nav-group a{
+  display:flex;align-items:center;gap:9px;padding:7px 10px;border-radius:8px;
+  font-size:14px;color:var(--fg-dim);transition:.14s;line-height:1.5;
+}
+.nav-group a:hover{background:var(--bg-hover);color:var(--fg)}
+.nav-group a .dot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.35;flex:none}
+.nav-group a.active{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.nav-group a.active .dot{opacity:1}
+.sidebar-foot{
+  margin-top:26px;padding:12px 10px;border-top:1px solid var(--line-soft);
+  font-size:11.5px;color:var(--fg-mute);line-height:1.8;
+}
+.scrim{display:none}
+
+/* main */
+.main{flex:1;min-width:0;padding:38px 44px 70px}
+/* 本页为图表密集型白皮书：正文保持 820px 可读行宽，图表/表格放宽到 1000px */
+.doc{max-width:1000px}
+.doc > p,
+.doc > ul,
+.doc > ol,
+.doc > blockquote,
+.doc > h2,
+.doc > h3,
+.doc > h4,
+.doc > .hero,
+.doc > pre{max-width:820px}
+.doc-wide{max-width:1000px}
+.layout-wide{max-width:1720px}
+
+/* 角色设定图：定妆肖像 + 三视图并排 */
+.char-art{
+  display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);
+  gap:16px;align-items:start;margin:16px 0 10px;
+}
+.char-art figure{
+  margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  background:var(--bg-elev);
+}
+.char-art img{display:block;width:100%;height:auto}
+.char-art figcaption{
+  padding:8px 12px;font-size:12.5px;color:var(--fg-mute);line-height:1.6;
+  border-top:1px solid var(--line-soft);
+}
+.char-art .ca-p img{aspect-ratio:9/16;object-fit:cover}
+.char-art .ca-t img{aspect-ratio:16/9;object-fit:cover;background:#fff}
+@media (max-width:820px){
+  .char-art{grid-template-columns:1fr}
+  .char-art .ca-p img{aspect-ratio:auto}
+}
+.hero{
+  border:1px solid var(--line);border-radius:16px;padding:30px 30px 26px;margin-bottom:38px;
+  background:
+    radial-gradient(120% 140% at 0% 0%,var(--accent-soft),transparent 58%),
+    var(--bg-soft);
+}
+.hero-kicker{
+  display:inline-block;font-size:11.5px;letter-spacing:.18em;color:var(--accent);
+  border:1px solid var(--accent-soft);background:var(--accent-soft);
+  padding:4px 10px;border-radius:999px;margin-bottom:14px;
+}
+.hero-title{
+  font-family:var(--serif);font-size:44px;line-height:1.15;margin:0 0 12px;
+  letter-spacing:.06em;font-weight:700;
+}
+.hero-sub{color:var(--fg-dim);font-size:15px;max-width:62ch;line-height:1.8}
+.hero-stats{display:flex;gap:30px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft)}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-size:24px;font-family:var(--serif);color:var(--fg);line-height:1.2}
+.hero-stats span{font-size:11.5px;color:var(--fg-mute);letter-spacing:.08em}
+
+/* prose */
+.doc h1{
+  font-family:var(--serif);font-size:33px;line-height:1.35;margin:0 0 26px;
+  padding-bottom:18px;border-bottom:1px solid var(--line);letter-spacing:.02em;font-weight:700;
+}
+.doc h2{
+  font-size:22px;line-height:1.5;margin:52px 0 16px;padding-left:13px;
+  border-left:3px solid var(--accent);font-weight:650;letter-spacing:.01em;
+}
+.doc h3{font-size:17.5px;line-height:1.6;margin:34px 0 12px;color:var(--fg);font-weight:650}
+.doc h4{font-size:15.5px;margin:26px 0 10px;color:var(--fg-dim)}
+.doc h2:first-of-type,.doc h3:first-of-type{margin-top:34px}
+.doc p{margin:0 0 15px;color:var(--fg-dim)}
+.doc strong{color:var(--fg);font-weight:650}
+.doc em{color:var(--fg-dim);font-style:italic}
+.doc a{
+  color:var(--accent-2);border-bottom:1px solid color-mix(in srgb,var(--accent-2) 35%,transparent);
+  transition:.14s;padding-bottom:1px;
+}
+.doc a:hover{border-bottom-color:var(--accent-2)}
+.doc ul,.doc ol{margin:0 0 16px;padding-left:1.35em;color:var(--fg-dim)}
+.doc li{margin:5px 0}
+.doc li::marker{color:var(--accent)}
+.doc hr{border:0;height:1px;background:var(--line);margin:34px 0}
+.doc blockquote{
+  margin:0 0 20px;padding:14px 18px;border-left:3px solid var(--accent);
+  background:var(--bg-soft);border-radius:0 10px 10px 0;color:var(--fg-dim);
+}
+.doc blockquote p:last-child{margin-bottom:0}
+.doc code{
+  font-family:var(--mono);font-size:.88em;background:var(--bg-elev);
+  border:1px solid var(--line-soft);border-radius:5px;padding:1px 5px;color:var(--accent);
+}
+.doc pre{
+  margin:0 0 20px;padding:15px 17px;background:var(--bg-elev);
+  border:1px solid var(--line);border-radius:var(--radius);overflow-x:auto;
+}
+.doc pre code{background:none;border:0;padding:0;color:var(--fg-dim);font-size:13px;line-height:1.7}
+.doc pre{position:relative}
+.doc .mermaid{
+  margin:0 0 24px;padding:18px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--bg-soft);overflow-x:auto;text-align:center;
+}
+.doc .mermaid svg{max-width:100%;height:auto}
+/* Mermaid 内部 <style> 用 #id 选择器（特异性远高于类链），故此处一律 !important 才能覆盖 */
+.doc .mermaid .node rect,
+.doc .mermaid .node circle,
+.doc .mermaid .node ellipse,
+.doc .mermaid .node polygon,
+.doc .mermaid .node path{fill:var(--mg-node-bg)!important;stroke:var(--mg-node-border)!important}
+.doc .mermaid .label,
+.doc .mermaid .label text,
+.doc .mermaid span,
+.doc .mermaid p,
+.doc .mermaid .cluster-label,
+.doc .mermaid .nodeLabel,
+.doc .mermaid .edgeLabel{
+  fill:var(--mg-fg)!important;color:var(--mg-fg)!important;
+  font-family:var(--sans)!important;
+}
+.doc .mermaid .edgePath .path,
+.doc .mermaid .flowchart-link{stroke:var(--mg-edge)!important}
+.doc .mermaid .edgeLabel,
+.doc .mermaid .edgeLabel rect,
+.doc .mermaid .edgeLabel .label{fill:var(--mg-edge-bg)!important;color:var(--mg-fg)!important}
+.doc .mermaid .marker path{fill:var(--mg-edge)!important;stroke:var(--mg-edge)!important}
+.doc .mermaid .cluster rect,
+.doc .mermaid .cluster polygon{fill:var(--mg-cluster-bg)!important;stroke:var(--mg-cluster-border)!important}
+.doc .mermaid .cluster-label{color:var(--mg-fg)!important;fill:var(--mg-fg)!important;font-family:var(--sans)!important}
+/* timeline：事件条 / 分段线 */
+.doc .mermaid .node-bkg{fill:var(--mg-event-bg)!important}
+.doc .mermaid .eventWrapper text{fill:var(--mg-fg)!important}
+.doc .mermaid .section--1 rect,
+.doc .mermaid .section--1 path,
+.doc .mermaid .section--1 circle{fill:var(--mg-sec-0-bg)!important}
+.doc .mermaid .section--1 text{fill:var(--mg-sec-0-fg)!important}
+.doc .mermaid .section-0 rect,
+.doc .mermaid .section-0 path,
+.doc .mermaid .section-0 circle{fill:var(--mg-sec-1-bg)!important}
+.doc .mermaid .section-0 text{fill:var(--mg-sec-1-fg)!important}
+.doc .mermaid .section-1 rect,
+.doc .mermaid .section-1 path,
+.doc .mermaid .section-1 circle{fill:var(--mg-sec-2-bg)!important}
+.doc .mermaid .section-1 text{fill:var(--mg-sec-2-fg)!important}
+.doc .mermaid .section-2 rect,
+.doc .mermaid .section-2 path,
+.doc .mermaid .section-2 circle{fill:var(--mg-sec-3-bg)!important}
+.doc .mermaid .section-2 text{fill:var(--mg-sec-3-fg)!important}
+.doc .mermaid .section-3 rect,
+.doc .mermaid .section-3 path,
+.doc .mermaid .section-3 circle{fill:var(--mg-sec-4-bg)!important}
+.doc .mermaid .section-3 text{fill:var(--mg-sec-4-fg)!important}
+.doc .mermaid .section-edge--1{stroke:var(--mg-sec-0-bg)!important}
+.doc .mermaid .section-edge-0{stroke:var(--mg-sec-1-bg)!important}
+.doc .mermaid .section-edge-1{stroke:var(--mg-sec-2-bg)!important}
+.doc .mermaid .section-edge-2{stroke:var(--mg-sec-3-bg)!important}
+.doc .mermaid .section-edge-3{stroke:var(--mg-sec-4-bg)!important}
+.doc .mermaid line.node-line--1{stroke:var(--mg-sec-0-fg)!important}
+.doc .mermaid line.node-line-0{stroke:var(--mg-sec-1-fg)!important}
+.doc .mermaid line.node-line-1{stroke:var(--mg-sec-2-fg)!important}
+.doc .mermaid line.node-line-2{stroke:var(--mg-sec-3-fg)!important}
+.doc .mermaid line.node-line-3{stroke:var(--mg-sec-4-fg)!important}
+.copy-btn{
+  position:absolute;top:8px;right:8px;padding:4px 10px;font-size:11.5px;font-family:inherit;
+  background:var(--bg);border:1px solid var(--line);border-radius:7px;
+  color:var(--fg-mute);cursor:pointer;opacity:0;transition:.16s;
+}
+.doc pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{color:var(--accent);border-color:var(--accent)}
+.doc table{
+  width:100%;border-collapse:collapse;margin:0 0 22px;font-size:14.5px;
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+}
+.doc th,.doc td{padding:10px 13px;border-bottom:1px solid var(--line-soft);text-align:left;vertical-align:top}
+.doc th{background:var(--bg-elev);color:var(--fg);font-weight:650;white-space:nowrap}
+.doc tr:last-child td{border-bottom:0}
+.doc tbody tr:hover{background:var(--bg-hover)}
+.doc td strong{color:var(--accent)}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 2px}
+
+/* prevnext */
+.prevnext{display:flex;gap:14px;margin:56px 0 0;padding-top:26px;border-top:1px solid var(--line);max-width:820px}
+.pn{
+  flex:1;min-width:0;padding:13px 16px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--bg-soft);transition:.16s;display:flex;flex-direction:column;gap:3px;
+}
+.pn:hover{border-color:var(--accent);background:var(--bg-hover)}
+.pn.next{text-align:right}
+.pn span{font-size:11.5px;color:var(--fg-mute)}
+.pn strong{font-size:14px;color:var(--fg);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site-foot{margin-top:44px;font-size:12px;color:var(--fg-mute);text-align:center}
+
+/* toc */
+.toc{
+  width:var(--toc-w);flex:none;position:sticky;top:var(--topbar-h);
+  max-height:calc(100vh - var(--topbar-h));overflow-y:auto;
+  padding:30px 20px 40px 8px;border-left:1px solid var(--line-soft);
+}
+.toc-title{
+  font-size:11.5px;letter-spacing:.14em;color:var(--fg-mute);font-weight:600;
+  margin-bottom:10px;text-transform:uppercase;
+}
+.toc ul{list-style:none;margin:0;padding:0}
+.toc li{margin:1px 0}
+.toc a{
+  display:block;font-size:12.8px;line-height:1.6;color:var(--fg-mute);padding:4px 8px;
+  border-radius:6px;border-left:2px solid transparent;transition:.14s;
+}
+.toc a:hover{color:var(--fg);background:var(--bg-hover)}
+.toc a.active{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft)}
+.toc .lv3 a{padding-left:20px;font-size:12.2px}
+
+/* search */
+.search-modal{
+  position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.55);
+  backdrop-filter:blur(3px);display:flex;justify-content:center;padding:12vh 20px 20px;
+}
+.search-modal[hidden]{display:none}
+.search-box{
+  width:min(640px,100%);max-height:70vh;display:flex;flex-direction:column;
+  background:var(--bg-elev);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.45);overflow:hidden;
+}
+.search-input-row{
+  display:flex;align-items:center;gap:10px;padding:13px 15px;
+  border-bottom:1px solid var(--line);color:var(--fg-mute);
+}
+.search-input-row input{
+  flex:1;background:none;border:0;outline:0;color:var(--fg);
+  font-size:15px;font-family:inherit;
+}
+.search-input-row input::placeholder{color:var(--fg-mute)}
+.search-results{overflow-y:auto;padding:8px}
+.sr-item{padding:11px 12px;border-radius:9px;cursor:pointer;border:1px solid transparent}
+.sr-item:hover,.sr-item.sel{background:var(--bg-hover);border-color:var(--line)}
+.sr-title{font-size:14px;color:var(--fg);font-weight:600;display:flex;gap:8px;align-items:baseline}
+.sr-title .badge{
+  font-size:10.5px;color:var(--accent);background:var(--accent-soft);
+  padding:2px 7px;border-radius:999px;font-weight:500;flex:none;
+}
+.sr-title .sr-count{font-size:11.5px;color:var(--fg-mute);font-weight:400;margin-left:auto;flex:none}
+.sr-snippet{font-size:12.8px;color:var(--fg-mute);margin-top:4px;line-height:1.65;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sr-empty{padding:26px;text-align:center;color:var(--fg-mute);font-size:13.5px}
+
+.totop{
+  position:fixed;right:26px;bottom:26px;width:40px;height:40px;border-radius:50%;
+  background:var(--bg-elev);border:1px solid var(--line);color:var(--fg-dim);
+  font-size:17px;cursor:pointer;opacity:0;pointer-events:none;transition:.2s;z-index:50;
+}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{color:var(--accent);border-color:var(--accent)}
+
+/* responsive */
+@media (max-width:1180px){
+  .toc{display:none}
+}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .sidebar{
+    position:fixed;left:0;top:var(--topbar-h);z-index:70;width:280px;
+    background:var(--bg-soft);transform:translateX(-100%);transition:transform .24s;
+  }
+  .sidebar.open{transform:none;box-shadow:0 0 40px rgba(0,0,0,.4)}
+  .scrim{display:block;position:fixed;inset:var(--topbar-h) 0 0;background:rgba(0,0,0,.5);
+    opacity:0;pointer-events:none;transition:.24s;z-index:65}
+  .scrim.open{opacity:1;pointer-events:auto}
+  .main{padding:26px 20px 60px}
+  .hero{padding:22px}
+  .hero-title{font-size:33px}
+  .doc h1{font-size:26px}
+  .doc h2{font-size:19px}
+  .btn-label{display:none}
+}
+@media (max-width:520px){
+  body{font-size:15.5px}
+  .prevnext{flex-direction:column}
+  .pn.next{text-align:left}
+  .hero-stats{gap:20px}
+}
+@media print{
+  .topbar,.sidebar,.toc,.prevnext,.totop,.search-modal,.progress{display:none!important}
+  body{background:#fff;color:#000}
+  .main{padding:0}
+}
+/* ---------- 本项目：长篇企划白皮书 ---------- */
+.doc blockquote{
+  border-left-color:var(--accent-2);
+  background:linear-gradient(180deg,var(--bg-soft),transparent);
+}
+.doc blockquote strong{color:var(--accent)}
+.doc table th{position:sticky;top:0}
+.hero-title{letter-spacing:.04em}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" style="width: 0%;"></div>
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开目录">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path></svg>
+  </button>
+  <a class="brand" href="#">
+    <span class="brand-mark">火</span>
+    <span class="brand-text"><strong>无尽杀戮：双相潮主</strong><em>长篇小说企划 · 世界观设定白皮书</em></span>
+  </a>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="搜索">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"></circle><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+      <span class="btn-label">搜索</span>
+    </button>
+    <button class="icon-btn" id="themeBtn" aria-label="切换主题">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 13a8.5 8.5 0 11-10-10 7 7 0 0010 10z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout-wide">
+  <aside class="sidebar" id="sidebar">
+    <div class="nav-group">
+      <div class="nav-group-title">章节目录</div>
+      <ul>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%B8%80%E4%BD%9C%E5%93%81%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%8F%97%E4%BC%97%E7%88%BD%E7%82%B9%E6%A8%A1%E5%9E%8B"><span class="dot"></span>一、 作品核心概念与受众爽点模型</a></li>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%BA%8C%E4%B8%96%E7%95%8C%E8%A7%82%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E4%B8%8E%E7%81%BE%E5%8F%98%E8%A7%84%E5%88%99"><span class="dot"></span>二、 世界观底层逻辑与灾变规则</a></li>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%B8%89%E4%B8%BB%E8%A7%92%E9%9D%A2%E6%9D%BF%E4%B8%8E%E5%8F%8C%E7%9B%B8%E9%AA%A8%E7%BA%B9%E5%8D%87%E7%BA%A7%E4%BD%93%E7%B3%BB"><span class="dot"></span>三、 主角面板与双相骨纹升级体系</a></li>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%9B%9B%E6%A0%B8%E5%BF%83%E4%BA%BA%E7%89%A9%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8A%BF%E5%8A%9B%E7%94%9F%E6%80%81"><span class="dot"></span>四、 核心人物矩阵与势力生态</a></li>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%BA%94%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%9A%B4%E9%9B%A8%E7%83%AC%E7%81%AB%E8%AF%A6%E5%B0%BD%E8%8A%82%E5%A5%8F%E4%B8%8E%E8%8A%82%E6%8B%8D%E5%A4%A7%E7%BA%B2%E5%89%8D30%E4%B8%87%E5%AD%97"><span class="dot"></span>五、 第一卷《暴雨烬火》详尽节奏与节拍大纲（前30万字）</a></li>
+        <li><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%85%AD%E5%85%A8%E4%B9%A6%E5%90%8E%E7%BB%AD%E9%95%BF%E7%BA%BF%E4%B8%BB%E7%BA%BF%E8%A7%84%E5%88%92%E5%8D%B7%E4%BA%8C%E8%87%B3%E5%8D%B7%E5%9B%9B"><span class="dot"></span>六、 全书后续长线主线规划（卷二至卷四）</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-foot">
+      <div>长篇企划 · 暂定名</div>
+      <div>四卷主线 · 九阶骨纹</div>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <article class="doc">
+      <div class="hero">
+        <div class="hero-kicker">长篇小说企划 · 世界观设定白皮书（暂定名）</div>
+        <h1 class="hero-title">无尽杀戮：双相潮主</h1>
+        <div class="hero-sub">男频末世升级流 × 系统流 × 异能觉醒 × 铁血霸权 × 崇高救世。<br>一份面向长篇连载的完整世界观设定、人物矩阵与四卷主线规划。</div>
+        <div class="hero-stats">
+          <div><b>4</b><span>卷主线</span></div>
+          <div><b>30 万字</b><span>首卷节奏</span></div>
+          <div><b>9 阶</b><span>双生骨纹</span></div>
+          <div><b>3 人</b><span>铁血三角</span></div>
+        </div>
+      </div>
+      <blockquote>
+<p><strong>题材定位</strong>：男频末世升级流 ｜ 系统流 ｜ 异能觉醒 ｜ 铁血霸权 ｜ 崇高救世
+<strong>核心标签</strong>：<code>#重生</code> <code>#杀戮系统</code> <code>#双相灰雾</code> <code>#焚斑救世</code> <code>#骨纹争霸</code> <code>#潮主之谜</code>
+<strong>一句话卖点</strong>：
+全球沦为无尽杀戮游戏，所有人为求生存抛弃感染者、疯狂互杀；唯有被双相灰雾感染、从系统归档死锁中回滚重生的陆沉，握着一簇专烧灰斑的焚灭余烬，救万人为死士，夺灰潮为神权，向着连神明都视为禁忌消亡的“虚无潮主”逆天登顶！</p>
+</blockquote>
+<hr>
+<h2 id="一作品核心概念与受众爽点模型">一、 作品核心概念与受众爽点模型</h2>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1792642415295" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 753.175048828125px;" viewBox="-8 -7.999998092651367 753.175048828125 722.7999877929688" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1792642415295{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;fill:#3d4353;}#mermaid-1792642415295 .error-icon{fill:#fff;}#mermaid-1792642415295 .error-text{fill:#000000;stroke:#000000;}#mermaid-1792642415295 .edge-thickness-normal{stroke-width:2px;}#mermaid-1792642415295 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1792642415295 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1792642415295 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1792642415295 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1792642415295 .marker{fill:#9aa0ad;stroke:#9aa0ad;}#mermaid-1792642415295 .marker.cross{stroke:#9aa0ad;}#mermaid-1792642415295 svg{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;}#mermaid-1792642415295 .label{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#3d4353;}#mermaid-1792642415295 .cluster-label text{fill:#3d4353;}#mermaid-1792642415295 .cluster-label span,#mermaid-1792642415295 p{color:#3d4353;}#mermaid-1792642415295 .label text,#mermaid-1792642415295 span,#mermaid-1792642415295 p{fill:#3d4353;color:#3d4353;}#mermaid-1792642415295 .node rect,#mermaid-1792642415295 .node circle,#mermaid-1792642415295 .node ellipse,#mermaid-1792642415295 .node polygon,#mermaid-1792642415295 .node path{fill:#ffffff;stroke:#c9c7c0;stroke-width:1px;}#mermaid-1792642415295 .flowchart-label text{text-anchor:middle;}#mermaid-1792642415295 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1792642415295 .node .label{text-align:center;}#mermaid-1792642415295 .node.clickable{cursor:pointer;}#mermaid-1792642415295 .arrowheadPath{fill:#08080a;}#mermaid-1792642415295 .edgePath .path{stroke:#9aa0ad;stroke-width:2.0px;}#mermaid-1792642415295 .flowchart-link{stroke:#9aa0ad;fill:none;}#mermaid-1792642415295 .edgeLabel{background-color:#f7f7f5;text-align:center;}#mermaid-1792642415295 .edgeLabel rect{opacity:0.5;background-color:#f7f7f5;fill:#f7f7f5;}#mermaid-1792642415295 .labelBkg{background-color:rgba(247, 247, 245, 0.5);}#mermaid-1792642415295 .cluster rect{fill:#fffefb;stroke:#e2e1dc;stroke-width:1px;}#mermaid-1792642415295 .cluster text{fill:#3d4353;}#mermaid-1792642415295 .cluster span,#mermaid-1792642415295 p{color:#3d4353;}#mermaid-1792642415295 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;background:#fff;border:1px solid hsl(0, 0%, 90%);border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1792642415295 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#3d4353;}#mermaid-1792642415295 :root{--mermaid-font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;}</style><g><marker id="mermaid-1792642415295_flowchart-pointEnd" class="marker flowchart" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415295_flowchart-pointStart" class="marker flowchart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415295_flowchart-circleEnd" class="marker flowchart" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415295_flowchart-circleStart" class="marker flowchart" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415295_flowchart-crossEnd" class="marker cross flowchart" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415295_flowchart-crossStart" class="marker cross flowchart" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M352.587,44.6L352.587,48.767C352.587,52.933,352.587,61.267,352.587,68.717C352.587,76.167,352.587,82.733,352.587,86.017L352.587,89.3" id="L-A-B-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-A LE-B" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M352.587,139.2L352.587,143.367C352.587,147.533,352.587,155.867,352.587,163.317C352.587,170.767,352.587,177.333,352.587,180.617L352.587,183.9" id="L-B-C-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-B LE-C" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M352.587,233.8L352.587,237.967C352.587,242.133,352.587,250.467,352.587,257.917C352.587,265.367,352.587,271.933,352.587,275.217L352.587,278.5" id="L-C-D-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-C LE-D" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M305.087,317.517L280.205,323.497C255.323,329.478,205.558,341.439,180.676,350.703C155.794,359.967,155.794,366.533,155.794,369.817L155.794,373.1" id="L-D-D1-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-D LE-D1" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M400.087,317.517L424.97,323.497C449.852,329.478,499.617,341.439,524.499,350.703C549.381,359.967,549.381,366.533,549.381,369.817L549.381,373.1" id="L-D-D2-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-D LE-D2" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M155.794,423L155.794,427.167C155.794,431.333,155.794,439.667,155.794,447.117C155.794,454.567,155.794,461.133,155.794,464.417L155.794,467.7" id="L-D1-E-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-D1 LE-E" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M549.381,423L549.381,427.167C549.381,431.333,549.381,439.667,549.381,447.117C549.381,454.567,549.381,461.133,549.381,464.417L549.381,467.7" id="L-D2-F-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-D2 LE-F" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M155.794,517.6L155.794,521.767C155.794,525.933,155.794,534.267,172.27,542.394C188.747,550.52,221.701,558.441,238.177,562.401L254.654,566.361" id="L-E-G-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-E LE-G" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M549.381,517.6L549.381,521.767C549.381,525.933,549.381,534.267,532.905,542.394C516.428,550.52,483.474,558.441,466.998,562.401L450.521,566.361" id="L-F-G-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-F LE-G" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path><path d="M352.587,612.2L352.587,616.367C352.587,620.533,352.587,628.867,352.587,636.317C352.587,643.767,352.587,650.333,352.587,653.617L352.587,656.9" id="L-G-H-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-G LE-H" style="fill:none;" marker-end="url(#mermaid-1792642415295_flowchart-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default default flowchart-label" id="flowchart-A-0" data-node="true" data-id="A" transform="translate(352.5874938964844, 22.299999237060547)"><rect class="basic label-container" style="" rx="0" ry="0" x="-119.2125015258789" y="-22.300000190734863" width="238.4250030517578" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-111.7125015258789, -14.800000190734863)"><rect></rect><foreignobject width="223.4250030517578" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">双相灰雾感染 (世界唯一异常体)</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-B-1" data-node="true" data-id="B" transform="translate(352.5874938964844, 116.89999771118164)"><rect class="basic label-container" style="" rx="0" ry="0" x="-111.2125015258789" y="-22.300000190734863" width="222.4250030517578" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-103.7125015258789, -14.800000190734863)"><rect></rect><foreignobject width="207.4250030517578" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">系统抹杀归档 (逻辑死锁溢出)</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-C-3" data-node="true" data-id="C" transform="translate(352.5874938964844, 211.49999618530273)"><rect class="basic label-container" style="" rx="0" ry="0" x="-111.2125015258789" y="-22.300000190734863" width="222.4250030517578" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-103.7125015258789, -14.800000190734863)"><rect></rect><foreignobject width="207.4250030517578" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">回滚重生 (灾变降临前数小时)</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-D-5" data-node="true" data-id="D" transform="translate(352.5874938964844, 306.0999946594238)"><rect class="basic label-container" style="" rx="0" ry="0" x="-47.5" y="-22.300000190734863" width="95" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-40, -14.800000190734863)"><rect></rect><foreignobject width="80" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">双生金手指</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-D1-7" data-node="true" data-id="D1" transform="translate(155.7937469482422, 400.6999931335449)"><rect class="basic label-container" style="" rx="0" ry="0" x="-155.7937469482422" y="-22.300000190734863" width="311.5874938964844" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-148.2937469482422, -14.800000190734863)"><rect></rect><foreignobject width="296.5874938964844" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">【焚烧灰斑】: 净化感染者，救治必死之人</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-D2-9" data-node="true" data-id="D2" transform="translate(549.3812408447266, 400.6999931335449)"><rect class="basic label-container" style="" rx="0" ry="0" x="-187.7937469482422" y="-22.300000190734863" width="375.5874938964844" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-180.2937469482422, -14.800000190734863)"><rect></rect><foreignobject width="360.5874938964844" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">【九阶双生骨纹】: 掠夺规则余烬，战力指数级蜕变</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-E-11" data-node="true" data-id="E" transform="translate(155.7937469482422, 495.299991607666)"><rect class="basic label-container" style="" rx="0" ry="0" x="-135.5" y="-22.300000190734863" width="271" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-128, -14.800000190734863)"><rect></rect><foreignobject width="256" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">救一人即成死士，建【不灭薪火城】</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-F-13" data-node="true" data-id="F" transform="translate(549.3812408447266, 495.299991607666)"><rect class="basic label-container" style="" rx="0" ry="0" x="-143.5" y="-22.300000190734863" width="287" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-136, -14.800000190734863)"><rect></rect><foreignobject width="272" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">篡夺灰潮权限，逼近【未知潮主】境界</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-G-16" data-node="true" data-id="G" transform="translate(352.5874938964844, 589.8999900817871)"><rect class="basic label-container" style="" rx="0" ry="0" x="-122.16875457763672" y="-22.300000190734863" width="244.33750915527344" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-114.66875457763672, -14.800000190734863)"><rect></rect><foreignobject width="229.33750915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">抗衡达尔文财阀 + 诛灭拜雾邪教</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-H-18" data-node="true" data-id="H" transform="translate(352.5874938964844, 684.4999885559082)"><rect class="basic label-container" style="" rx="0" ry="0" x="-191.90000915527344" y="-22.300000190734863" width="383.8000183105469" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-184.40000915527344, -14.800000190734863)"><rect></rect><foreignobject width="368.8000183105469" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">崇高抉择: 明知前路或为'归一化雾'，依然以身护万灵</span></div></foreignobject></g></g></g></g></g></svg></div><h3 id="11核心反差与男频爽感引擎">1.1 核心反差与男频爽感引擎</h3>
+<ol>
+<li><strong>反差爽（道德与规则的颠覆者）</strong>：<ul>
+<li>别人在杀戮游戏中遵守“丛林法则”，感染即抛弃、杀怪抢晶核、同类相残；</li>
+<li>主角行事杀伐果决、狠辣无情，偏偏手握全宇宙唯一的“净化灰斑”权能。他救的人，全都成为对他誓死效忠的铁血死士；他救的人越多，体内夺取的灰潮权柄越磅礴。</li>
+</ul>
+</li>
+<li><strong>护短与暴虐的统一</strong>：<ul>
+<li><strong>对外</strong>：心狠手辣，对敢染指自己利益、勾结邪教、把难民当弃子血食的财阀豪门斩草除根、剥皮抽骨。</li>
+<li><strong>对内</strong>：极致霸道护短。“我救下的人，阎王来了也收不走，哪个世家敢动我麾下一个兵，我屠他全族！”</li>
+</ul>
+</li>
+<li><strong>崇高的终极悬念（男频罕有的精神史诗感）</strong>：<ul>
+<li>世间典籍从无“潮主”记载，古老传闻认为走到尽头是“归一化雾”（肉身意识彻底溶入虚无天灾）。</li>
+<li>主角每升一阶，肉体便多一分向灰雾虚化；在所有人以为他在步入自杀绝路时，主角明知前路凶险虚无，依然毅然决然踏上巅峰。这种**“不畏牺牲的殉道者魄力”<strong>与</strong>“横推一切的霸道手腕”**融合，铸就顶格的大男主魅力。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="二世界观底层逻辑与灾变规则">二、 世界观底层逻辑与灾变规则</h2>
+<h3 id="21灾变起源与“双相灰雾”">2.1 灾变起源与“双相灰雾”</h3>
+<ul>
+<li><strong>杀戮游戏与灰雾降临</strong>：
+天道规则崩解，高维意志将地球锚定为“无尽杀戮场”。所有人觉醒数据化面板、四维属性，每日需猎杀怪物获取晶核升级。</li>
+<li><strong>双相灰雾的本质</strong>：
+常规灰雾为“单相侵蚀”，被雾气沾染即被系统判定为“灰斑感染者”，14天内若无特殊手段处理，将异化为失去神智、只知撕咬同化活人的**“灰奴”**。
+<strong>主角身上的双相灰雾</strong>：灾变之初两种相生相克极端规则（“生之侵蚀”与“死之湮灭”）在同一坐标重叠碰撞。全宇宙仅有主角一人同时被双雾浸透，产生未知变量。</li>
+</ul>
+<h3 id="22归档机制与逻辑死锁重生">2.2 归档机制与逻辑死锁重生</h3>
+<ul>
+<li><strong>何为归档</strong>：
+系统在感染者异化前或肉体彻底死寂时，执行的“世界垃圾数据抹除机制”。被归档者名字入册，骨肉化为虚无，彻底从现世抹去。</li>
+<li><strong>回滚重生的Bug</strong>：
+前世主角在双灰雾折磨下被大势力送入焚化坑强制“归档”，系统执行抹杀算法时，由于双雾的两极规则产生互斥，导致系统底层逻辑发生溢出死锁（Divide by Zero级系统错误）。
+系统判定“抹除失败，数据异常，强制回滚至初始状态”——主角带着两极规则烙印与未来记忆，回滚重生至<strong>灾变降临前 3 小时</strong>！</li>
+</ul>
+<h3 id="23灰潮生物与灾变进阶">2.3 灰潮生物与灾变进阶</h3>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">异化产物</th>
+<th align="left">威胁特征</th>
+<th align="left">人类常规处理方式</th>
+<th align="left">主角处理方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>初期 (0-14天)</strong></td>
+<td align="left">灰斑感染者</td>
+<td align="left">皮肤灰白斑块，属性衰退，散发死气</td>
+<td align="left">视为瘟疫与累赘，直接屠杀或驱逐</td>
+<td align="left"><strong>焚斑净化</strong>：剥离灰斑，收为忠臣</td>
+</tr>
+<tr>
+<td align="left"><strong>中期 (逾期)</strong></td>
+<td align="left">灰奴 (陶俑人)</td>
+<td align="left">全身石膏化、关节卡顿、刀枪不入、群居狂暴</td>
+<td align="left">组团猎杀挖晶核</td>
+<td align="left">净火大范围余烬压制</td>
+</tr>
+<tr>
+<td align="left"><strong>后期 (潮涌)</strong></td>
+<td align="left">灾厄异种 / 雾兽</td>
+<td align="left">灰雾规则凝聚的异界巨兽，带规则光环</td>
+<td align="left">顶尖公会以人命堆填</td>
+<td align="left">抽取雾核，强化骨纹槽</td>
+</tr>
+<tr>
+<td align="left"><strong>巅峰 (终焉)</strong></td>
+<td align="left">潮罚规则体</td>
+<td align="left">无形无相的规则抹杀风暴</td>
+<td align="left">众生平等被除名</td>
+<td align="left">潮主权能硬抗并收缴</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="三主角面板与双相骨纹升级体系">三、 主角面板与双相骨纹升级体系</h2>
+<h3 id="31主角变异面板重生初期">3.1 主角变异面板（重生初期）</h3>
+<pre><code>【姓名：陆沉】
+【状态：双相归档重生体（世界唯一异变）】
+【等级：LV.1（0/10）】
+【四维属性】：
+  - 体魄：1.8 （肉体抗性、肌肉强度）
+  - 血气：2.1 （骨血活性、生命恢复速度）
+  - 影速：1.5 （神经反射、位移瞬爆）
+  - 骨性：9.9 （特殊隐藏属性：骨骼硬度、承载规则火种上限）
+【本命权能】：
+  ①【双相净火（一阶·初醒）】：对活物无杀伤，专门引燃并焚化一切灰斑与灰潮规则侵蚀。
+  ②【九阶双生骨纹】：已觉醒【一纹·初觉】（右手腕骨盘绕黑白游龙纹）。
+【隐藏警示条】：
+  【潮主归一度】：0.01%（当数值上升，身体逐步向灰雾虚化转换，传闻达100%将融于虚无）</code><button class="copy-btn" type="button">复制</button></pre><h3 id="32骨纹成长梯度表">3.2 骨纹成长梯度表</h3>
+<table>
+<thead>
+<tr>
+<th align="left">纹阶</th>
+<th align="left">境界称谓</th>
+<th align="left">纹路蔓延部位</th>
+<th align="left">战斗视觉展现</th>
+<th align="left">控潮权柄（主角特权）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>一纹</strong></td>
+<td align="left"><strong>初醒</strong></td>
+<td align="left">右手腕骨</td>
+<td align="left">灰白与漆黑交织细纹，拳风带净火</td>
+<td align="left">单体近身触碰焚斑（耗时30秒）</td>
+</tr>
+<tr>
+<td align="left"><strong>二纹</strong></td>
+<td align="left"><strong>正骨</strong></td>
+<td align="left">小臂至手肘</td>
+<td align="left">骨纹如熔浆流动，骨刃破体而出</td>
+<td align="left">远程火线焚斑，接触感染体即秒净</td>
+</tr>
+<tr>
+<td align="left"><strong>三纹</strong></td>
+<td align="left"><strong>骨师</strong></td>
+<td align="left">肩胛与锁骨</td>
+<td align="left">骨甲半身凝聚，黑白双焰附魔武器</td>
+<td align="left">5米微型净火领域，同时净化数十人</td>
+</tr>
+<tr>
+<td align="left"><strong>四纹</strong></td>
+<td align="left"><strong>骨将</strong></td>
+<td align="left">胸腔脊柱肋骨</td>
+<td align="left">背后凝聚虚幻双龙骨翼，御风破煞</td>
+<td align="left">调动小范围灰雾屏蔽敌方视野/侦查</td>
+</tr>
+<tr>
+<td align="left"><strong>五纹</strong></td>
+<td align="left"><strong>骨侯</strong></td>
+<td align="left">全身躯干覆盖</td>
+<td align="left">骨纹化作外附骨铠，徒手硬撼高阶雾兽</td>
+<td align="left">反向引爆敌人体内灰斑，造成真实伤害</td>
+</tr>
+<tr>
+<td align="left"><strong>六纹</strong></td>
+<td align="left"><strong>骨座</strong></td>
+<td align="left">蔓延至四肢深处</td>
+<td align="left">骨纹发出黄钟大吕般骨鸣，威慑群雄</td>
+<td align="left">划定“绝对净域”，驱散城池级灰潮</td>
+</tr>
+<tr>
+<td align="left"><strong>七纹</strong></td>
+<td align="left"><strong>骨宗</strong></td>
+<td align="left">主纹生出九重副纹</td>
+<td align="left">肉身半虚化，骨骼晶莹如黑白玉髓</td>
+<td align="left">操纵灰雾潮汐化为千军万马攻城</td>
+</tr>
+<tr>
+<td align="left"><strong>八纹</strong></td>
+<td align="left"><strong>骨极</strong></td>
+<td align="left">骨纹破骨入髓</td>
+<td align="left">举手投足引动天地灰潮呼应</td>
+<td align="left">篡夺敌对潮主次级权限，降维剥夺</td>
+</tr>
+<tr>
+<td align="left"><strong>九纹</strong></td>
+<td align="left"><strong>骨冠</strong></td>
+<td align="left">顶骨生冕，神纹天成</td>
+<td align="left">肉体完全化为生灭不息的规则风暴</td>
+<td align="left">终极掌控：令灰潮止息，或降劫人间</td>
+</tr>
+<tr>
+<td align="left"><strong>十阶</strong></td>
+<td align="left"><strong>禁忌·潮主</strong></td>
+<td align="left">传闻中的虚无绝境</td>
+<td align="left">未知（传闻尽头无实体，化为天道灰雾）</td>
+<td align="left"><strong>自愿焚己，重铸纪元（真·救世）</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="四核心人物矩阵与势力生态">四、 核心人物矩阵与势力生态</h2>
+<h3 id="41核心主角三人组铁血三角">4.1 核心主角三人组（铁血三角）</h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1792642415372" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 1176.612548828125px;" viewBox="-8 -7.999998092651367 1176.612548828125 214.39999389648438" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1792642415372{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;fill:#3d4353;}#mermaid-1792642415372 .error-icon{fill:#fff;}#mermaid-1792642415372 .error-text{fill:#000000;stroke:#000000;}#mermaid-1792642415372 .edge-thickness-normal{stroke-width:2px;}#mermaid-1792642415372 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1792642415372 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1792642415372 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1792642415372 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1792642415372 .marker{fill:#9aa0ad;stroke:#9aa0ad;}#mermaid-1792642415372 .marker.cross{stroke:#9aa0ad;}#mermaid-1792642415372 svg{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;}#mermaid-1792642415372 .label{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#3d4353;}#mermaid-1792642415372 .cluster-label text{fill:#3d4353;}#mermaid-1792642415372 .cluster-label span,#mermaid-1792642415372 p{color:#3d4353;}#mermaid-1792642415372 .label text,#mermaid-1792642415372 span,#mermaid-1792642415372 p{fill:#3d4353;color:#3d4353;}#mermaid-1792642415372 .node rect,#mermaid-1792642415372 .node circle,#mermaid-1792642415372 .node ellipse,#mermaid-1792642415372 .node polygon,#mermaid-1792642415372 .node path{fill:#ffffff;stroke:#c9c7c0;stroke-width:1px;}#mermaid-1792642415372 .flowchart-label text{text-anchor:middle;}#mermaid-1792642415372 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1792642415372 .node .label{text-align:center;}#mermaid-1792642415372 .node.clickable{cursor:pointer;}#mermaid-1792642415372 .arrowheadPath{fill:#08080a;}#mermaid-1792642415372 .edgePath .path{stroke:#9aa0ad;stroke-width:2.0px;}#mermaid-1792642415372 .flowchart-link{stroke:#9aa0ad;fill:none;}#mermaid-1792642415372 .edgeLabel{background-color:#f7f7f5;text-align:center;}#mermaid-1792642415372 .edgeLabel rect{opacity:0.5;background-color:#f7f7f5;fill:#f7f7f5;}#mermaid-1792642415372 .labelBkg{background-color:rgba(247, 247, 245, 0.5);}#mermaid-1792642415372 .cluster rect{fill:#fffefb;stroke:#e2e1dc;stroke-width:1px;}#mermaid-1792642415372 .cluster text{fill:#3d4353;}#mermaid-1792642415372 .cluster span,#mermaid-1792642415372 p{color:#3d4353;}#mermaid-1792642415372 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;background:#fff;border:1px solid hsl(0, 0%, 90%);border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1792642415372 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#3d4353;}#mermaid-1792642415372 :root{--mermaid-font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;}</style><g><marker id="mermaid-1792642415372_flowchart-pointEnd" class="marker flowchart" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415372_flowchart-pointStart" class="marker flowchart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415372_flowchart-circleEnd" class="marker flowchart" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415372_flowchart-circleStart" class="marker flowchart" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415372_flowchart-crossEnd" class="marker cross flowchart" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415372_flowchart-crossStart" class="marker cross flowchart" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M190.738,133.602L194.904,135.752C199.071,137.901,207.404,142.201,215.738,144.35C224.071,146.5,232.404,146.5,236.571,146.5L240.738,146.5" id="L-LC-LC_HY-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-LC LE-LC_HY" style="fill:none;"></path><path d="M407.138,146.5L411.304,146.5C415.471,146.5,423.804,146.5,431.254,146.5C438.704,146.5,445.271,146.5,448.554,146.5L451.838,146.5" id="L-LC_HY-HY-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-LC_HY LE-HY" style="fill:none;" marker-end="url(#mermaid-1792642415372_flowchart-pointEnd)"></path><path d="M190.738,35.198L194.904,33.048C199.071,30.899,207.404,26.599,229.604,24.45C251.804,22.3,287.871,22.3,323.938,22.3C360.004,22.3,396.071,22.3,425.632,22.3C455.194,22.3,478.25,22.3,489.778,22.3L501.306,22.3" id="L-LC-LC_QC-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-LC LE-LC_QC" style="fill:none;"></path><path d="M667.706,22.3L691.234,22.3C714.763,22.3,761.819,22.3,800.662,26.539C839.506,30.778,870.136,39.256,885.452,43.495L900.767,47.734" id="L-LC_QC-QC-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-LC_QC LE-QC" style="fill:none;" marker-end="url(#mermaid-1792642415372_flowchart-pointEnd)"></path><path d="M711.875,146.5L728.042,146.5C744.208,146.5,776.542,146.5,808.024,142.261C839.506,138.022,870.136,129.544,885.452,125.305L900.767,121.066" id="L-HY-QC-0" class=" edge-thickness-normal edge-pattern-dotted flowchart-link LS-HY LE-QC" style="fill:none;stroke-width:2px;stroke-dasharray:3;" marker-end="url(#mermaid-1792642415372_flowchart-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(808.8750152587891, 146.5)"><g class="label" transform="translate(-72, -14.800000190734863)"><foreignobject width="144" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">互为臂膀，外御强敌</span></div></foreignobject></g></g></g><g class="nodes"><g class="node default default flowchart-label" id="flowchart-LC-19" data-node="true" data-id="LC" transform="translate(95.3687515258789, 84.39999961853027)"><rect class="basic label-container" style="" rx="0" ry="0" x="-95.3687515258789" y="-51.900001525878906" width="190.7375030517578" height="103.80000305175781"></rect><g class="label" style="" transform="translate(-87.8687515258789, -44.400001525878906)"><rect></rect><foreignobject width="175.7375030517578" height="88.80000305175781"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">陆沉 (主角 / 暴君救世主)<br>行事毒辣，护短如命<br>手掌净火，暗藏骨龙</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-LC_HY-20" data-node="true" data-id="LC_HY" transform="translate(323.93750762939453, 146.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-83.20000457763672" y="-22.300000190734863" width="166.40000915527344" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-75.70000457763672, -14.800000190734863)"><rect></rect><foreignobject width="151.40000915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">极致信任 &amp; 战力利刃</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-HY-21" data-node="true" data-id="HY" transform="translate(584.5062637329102, 146.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-127.3687515258789" y="-51.900001525878906" width="254.7375030517578" height="103.80000305175781"></rect><g class="label" style="" transform="translate(-119.8687515258789, -44.400001525878906)"><rect></rect><foreignobject width="239.7375030517578" height="88.80000305175781"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">叶红衣 (冷面女修罗 / 刺客女战神)<br>被豪门弃入焚化炉<br>陆沉赐其新生，誓死效忠</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-LC_QC-23" data-node="true" data-id="LC_QC" transform="translate(584.5062637329102, 22.299999237060547)"><rect class="basic label-container" style="" rx="0" ry="0" x="-83.20000457763672" y="-22.300000190734863" width="166.40000915527344" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-75.70000457763672, -14.800000190734863)"><rect></rect><foreignobject width="151.40000915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">战略中枢 &amp; 命脉依托</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-QC-24" data-node="true" data-id="QC" transform="translate(1033.243766784668, 84.39999961853027)"><rect class="basic label-container" style="" rx="0" ry="0" x="-127.3687515258789" y="-51.900001525878906" width="254.7375030517578" height="103.80000305175781"></rect><g class="label" style="" transform="translate(-119.8687515258789, -44.400001525878906)"><rect></rect><foreignobject width="239.7375030517578" height="88.80000305175781"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">苏清辞 (傲娇科研女王 / 后勤总督)<br>洞悉晶核公式与骨纹矩阵<br>打造末世最坚固钢铁薪火城</span></div></foreignobject></g></g></g></g></g></svg></div><ol>
+<li><strong>男主：陆沉</strong><ul>
+<li><strong>性格</strong>：冷峻、果断、霸道、骨子里刻着大英雄的担当与狂傲。重生归来，视世家规矩如草芥，信奉“规则由强者书写”。</li>
+<li><strong>救世理念</strong>：“世道烂了，神佛装死，那老子就用屠刀砍翻这吃人的人间，再用手里的火给死人活路！”</li>
+</ul>
+</li>
+<li><strong>第一女主（利刃）：叶红衣</strong><ul>
+<li><strong>身份背景</strong>：前顶级豪门叶家嫡系长女，觉醒顶尖“影刃”天赋。在一次外勤中不幸沾染双相灰斑，家族为掩盖丑闻并侵吞其战利品，冰冷剥夺其身份，捆绑扔进焚化坑等死。</li>
+<li><strong>人物弧光</strong>：在濒死绝望之际被陆沉一把从火坑里拽出，亲手为她焚尽灰斑。从此叶家天骄已死，世间唯留陆沉座下最忠诚锋利的女死神。谁敢对陆沉露獠牙，她必先取其首级。</li>
+</ul>
+</li>
+<li><strong>第二女主（智囊）：苏清辞</strong><ul>
+<li><strong>身份背景</strong>：国家前沿科学院超能生物学首席顾问，因坚持“感染者细胞存在自愈靶点，不得全员灭口”而被达尔文财阀高层排挤追杀。</li>
+<li><strong>人物弧光</strong>：被陆沉救回后，见识到了陆沉违背常理的“焚斑提炼法”，震惊之余将全部心血倾注在陆沉身上。嘴上傲娇爱吐槽，手上却以惊人效率统揽薪火城十万平民的吃穿用度与城防武器，是陆沉敢放手在前方大杀四方的坚强后盾。</li>
+</ul>
+</li>
+</ol>
+<h3 id="42核心对立势力架构">4.2 核心对立势力架构</h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1792642415398" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 837.3875122070312px;" viewBox="-7.5 -8 837.3875122070312 394.3999938964844" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1792642415398{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;fill:#3d4353;}#mermaid-1792642415398 .error-icon{fill:#fff;}#mermaid-1792642415398 .error-text{fill:#000000;stroke:#000000;}#mermaid-1792642415398 .edge-thickness-normal{stroke-width:2px;}#mermaid-1792642415398 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1792642415398 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1792642415398 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1792642415398 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1792642415398 .marker{fill:#9aa0ad;stroke:#9aa0ad;}#mermaid-1792642415398 .marker.cross{stroke:#9aa0ad;}#mermaid-1792642415398 svg{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;}#mermaid-1792642415398 .label{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#3d4353;}#mermaid-1792642415398 .cluster-label text{fill:#3d4353;}#mermaid-1792642415398 .cluster-label span,#mermaid-1792642415398 p{color:#3d4353;}#mermaid-1792642415398 .label text,#mermaid-1792642415398 span,#mermaid-1792642415398 p{fill:#3d4353;color:#3d4353;}#mermaid-1792642415398 .node rect,#mermaid-1792642415398 .node circle,#mermaid-1792642415398 .node ellipse,#mermaid-1792642415398 .node polygon,#mermaid-1792642415398 .node path{fill:#ffffff;stroke:#c9c7c0;stroke-width:1px;}#mermaid-1792642415398 .flowchart-label text{text-anchor:middle;}#mermaid-1792642415398 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1792642415398 .node .label{text-align:center;}#mermaid-1792642415398 .node.clickable{cursor:pointer;}#mermaid-1792642415398 .arrowheadPath{fill:#08080a;}#mermaid-1792642415398 .edgePath .path{stroke:#9aa0ad;stroke-width:2.0px;}#mermaid-1792642415398 .flowchart-link{stroke:#9aa0ad;fill:none;}#mermaid-1792642415398 .edgeLabel{background-color:#f7f7f5;text-align:center;}#mermaid-1792642415398 .edgeLabel rect{opacity:0.5;background-color:#f7f7f5;fill:#f7f7f5;}#mermaid-1792642415398 .labelBkg{background-color:rgba(247, 247, 245, 0.5);}#mermaid-1792642415398 .cluster rect{fill:#fffefb;stroke:#e2e1dc;stroke-width:1px;}#mermaid-1792642415398 .cluster text{fill:#3d4353;}#mermaid-1792642415398 .cluster span,#mermaid-1792642415398 p{color:#3d4353;}#mermaid-1792642415398 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;background:#fff;border:1px solid hsl(0, 0%, 90%);border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1792642415398 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#3d4353;}#mermaid-1792642415398 :root{--mermaid-font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;}</style><g><marker id="mermaid-1792642415398_flowchart-pointEnd" class="marker flowchart" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415398_flowchart-pointStart" class="marker flowchart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415398_flowchart-circleEnd" class="marker flowchart" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415398_flowchart-circleStart" class="marker flowchart" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1792642415398_flowchart-crossEnd" class="marker cross flowchart" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1792642415398_flowchart-crossStart" class="marker cross flowchart" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"></g><g class="edgeLabels"></g><g class="nodes"><g class="root" transform="translate(-7.5, -8)"><g class="clusters"><g class="cluster default flowchart-label" id="subGraph1"><rect style="" rx="0" ry="0" x="8" y="8" width="421.8000183105469" height="378.3999938964844"></rect><g class="cluster-label" transform="translate(142.60625457763672, 8)"><foreignobject width="152.58750915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">反派阵营二: 精神邪教</span></div></foreignobject></g></g></g><g class="edgePaths"><path d="M218.9,77.6L218.9,81.767C218.9,85.933,218.9,94.267,218.9,101.717C218.9,109.167,218.9,115.733,218.9,119.017L218.9,122.3" id="L-X1-X2-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-X1 LE-X2" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path><path d="M218.9,172.2L218.9,176.367C218.9,180.533,218.9,188.867,218.9,196.317C218.9,203.767,218.9,210.333,218.9,213.617L218.9,216.9" id="L-X2-X3-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-X2 LE-X3" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path><path d="M218.9,266.8L218.9,270.967C218.9,275.133,218.9,283.467,218.9,290.917C218.9,298.367,218.9,304.933,218.9,308.217L218.9,311.5" id="L-X3-X4-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-X3 LE-X4" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default default flowchart-label" id="flowchart-X2-34" data-node="true" data-id="X2" transform="translate(218.90000915527344, 149.89999771118164)"><rect class="basic label-container" style="" rx="0" ry="0" x="-55.5" y="-22.300000190734863" width="111" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-48, -14.800000190734863)"><rect></rect><foreignobject width="96" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">教主与狂信徒</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-X1-33" data-node="true" data-id="X1" transform="translate(218.90000915527344, 55.29999923706055)"><rect class="basic label-container" style="" rx="0" ry="0" x="-47.5" y="-22.300000190734863" width="95" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-40, -14.800000190734863)"><rect></rect><foreignobject width="80" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">归一拜雾教</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-X3-36" data-node="true" data-id="X3" transform="translate(218.90000915527344, 244.49999618530273)"><rect class="basic label-container" style="" rx="0" ry="0" x="-123.79375457763672" y="-22.300000190734863" width="247.58750915527344" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-116.29375457763672, -14.800000190734863)"><rect></rect><foreignobject width="232.58750915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">教义: 灰化即飞升，融入天灾真理</span></div></foreignobject></g></g><g class="node default flowchart-label" id="flowchart-X4-38" data-node="true" data-id="X4" transform="translate(218.90000915527344, 339.0999946594238)"><rect class="basic label-container" style="" rx="0" ry="0" x="-175.90000915527344" y="-22.300000190734863" width="351.8000183105469" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-168.40000915527344, -14.800000190734863)"><rect></rect><foreignobject width="336.8000183105469" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">敌视陆沉: 视'焚斑'为亵渎神恩，疯狂投毒造双潮</span></div></foreignobject></g></g></g></g><g class="root" transform="translate(464.29998779296875, -8)"><g class="clusters"><g class="cluster default flowchart-label" id="subGraph0"><rect style="" rx="0" ry="0" x="8" y="8" width="349.5874938964844" height="378.3999938964844"></rect><g class="cluster-label" transform="translate(82.49999237060547, 8)"><foreignobject width="200.58750915527344" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">反派阵营一: 现世达尔文财阀</span></div></foreignobject></g></g></g><g class="edgePaths"><path d="M182.794,77.6L182.794,81.767C182.794,85.933,182.794,94.267,182.794,101.717C182.794,109.167,182.794,115.733,182.794,119.017L182.794,122.3" id="L-Z1-Z2-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-Z1 LE-Z2" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path><path d="M182.794,172.2L182.794,176.367C182.794,180.533,182.794,188.867,182.794,196.317C182.794,203.767,182.794,210.333,182.794,213.617L182.794,216.9" id="L-Z2-Z3-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-Z2 LE-Z3" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path><path d="M182.794,266.8L182.794,270.967C182.794,275.133,182.794,283.467,182.794,290.917C182.794,298.367,182.794,304.933,182.794,308.217L182.794,311.5" id="L-Z3-Z4-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-Z3 LE-Z4" style="fill:none;" marker-end="url(#mermaid-1792642415398_flowchart-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default default flowchart-label" id="flowchart-Z2-28" data-node="true" data-id="Z2" transform="translate(182.7937469482422, 149.89999771118164)"><rect class="basic label-container" style="" rx="0" ry="0" x="-79.5" y="-22.300000190734863" width="159" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-72, -14.800000190734863)"><rect></rect><foreignobject width="144" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">垄断晶核、骨市交易</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-Z1-27" data-node="true" data-id="Z1" transform="translate(182.7937469482422, 55.29999923706055)"><rect class="basic label-container" style="" rx="0" ry="0" x="-79.65625" y="-22.300000190734863" width="159.3125" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-72.15625, -14.800000190734863)"><rect></rect><foreignobject width="144.3125" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">云顶财团 / 叶氏宗阀</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-Z3-30" data-node="true" data-id="Z3" transform="translate(182.7937469482422, 244.49999618530273)"><rect class="basic label-container" style="" rx="0" ry="0" x="-111.9000015258789" y="-22.300000190734863" width="223.8000030517578" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-104.4000015258789, -14.800000190734863)"><rect></rect><foreignobject width="208.8000030517578" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">推行'弃民令': 感染者直接活埋</span></div></foreignobject></g></g><g class="node default default flowchart-label" id="flowchart-Z4-32" data-node="true" data-id="Z4" transform="translate(182.7937469482422, 339.0999946594238)"><rect class="basic label-container" style="" rx="0" ry="0" x="-139.7937469482422" y="-22.300000190734863" width="279.5874938964844" height="44.60000038146973"></rect><g class="label" style="" transform="translate(-132.2937469482422, -14.800000190734863)"><rect></rect><foreignobject width="264.5874938964844" height="29.600000381469727"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">敌视陆沉: 认为他救民是动摇资本统治</span></div></foreignobject></g></g></g></g></g></g></g></svg></div><hr>
+<h2 id="五第一卷暴雨烬火详尽节奏与节拍大纲前30万字">五、 第一卷《暴雨烬火》详尽节奏与节拍大纲（前30万字）</h2>
+<h3 id="卷名第一卷暴雨烬火">卷名：第一卷 · 暴雨烬火</h3>
+<ul>
+<li><strong>卷核心矛盾</strong>：末日降临的人性崩塌 vs 陆沉抢救死士建立避难所；达尔文世家的无情弃民 vs 陆沉焚斑救世的铁血崛起。</li>
+<li><strong>终极高潮事件</strong>：双潮暴雨夜，叶家勾结邪教封锁城门妄图血祭数十万市民，陆沉独登城头，一刀劈杀叶家族长，一掌净火焚尽十万灰斑，定鼎【薪火城】！</li>
+</ul>
+<hr>
+<h3 id="第一卷逐卷节奏节拍表130章">第一卷逐卷节奏节拍表（1-30章）</h3>
+<h4 id="阶段一黄金破局期第1章第5章倒计时与首杀收服">阶段一：黄金破局期（第1章 - 第5章）· 倒计时与首杀收服</h4>
+<ul>
+<li><strong>第1章：归档重置，灾变倒计时02:59:59</strong><ul>
+<li><strong>开篇爆点</strong>：陆沉在冰冷出租屋猛然惊醒，浑身骨骼剧痛，视线中跳动着鲜红的系统提示：<code>【检测到双相逻辑死锁……归档回滚完成……距杀戮游戏降临还有 2小时58分】</code>。</li>
+<li><strong>先知行动</strong>：不囤泡面不囤水！男频硬核开局：直奔全城唯一的废弃军工机械厂与三号焚化中转站，抢占绝密战略地利。</li>
+</ul>
+</li>
+<li><strong>第2章：血色浓雾降临，第一声惨叫</strong><ul>
+<li><strong>灾变爆发</strong>：午夜钟声敲响，天地异变，腥臭黑白相间的双生灰雾自地底喷涌。全球面板激活，新手福利期9小时开启。</li>
+<li><strong>首杀暴击</strong>：异次元虫破土，众人惊恐逃窜。陆沉手握改装重钢钎，精准预判虫触死角，3秒秒杀！吸收首枚晶核，四维暴涨，全区通报首杀！</li>
+</ul>
+</li>
+<li><strong>第3章：焚化坑前的一道绝色焦影</strong><ul>
+<li><strong>冲突升级</strong>：叶家护卫队押送一批“第一批接触雾气生出灰斑”的伤员到达处理坑。为首少爷正是前世害死无数人的叶家二少，冷酷下令：“全部推下去烧死，别浪费晶核！”</li>
+<li><strong>绝境逢生</strong>：坑底重伤受缚的正是昔日叶家第一天骄叶红衣。她面容清冷惨白，手臂灰斑蔓延，眼中满是滔天恨意与绝望。</li>
+</ul>
+</li>
+<li><strong>第4章：我的火，可救死人，亦可焚恶鬼！</strong><ul>
+<li><strong>装逼打脸爽点</strong>：陆沉暴起突袭，一拳轰碎守卫队长喉骨，重钢钎直接将叶二少钉在推土机钢板上！</li>
+<li><strong>神迹展现</strong>：陆沉跃入深坑，面对满眼戒备的叶红衣，一指点在其手臂灰斑之上。净火爆裂，黑白双相火焰呼啸，剧痛中灰斑化为白烟散尽！系统提示：<code>【净化首例灰斑，掠夺规则余烬……骨纹进度激增】</code>！</li>
+</ul>
+</li>
+<li><strong>第5章：红衣跪伏，此命归君</strong><ul>
+<li>叶红衣灰斑彻底清除，力量重回巅峰，当场跪倒在陆沉脚下宣誓效忠。</li>
+<li>陆沉立于焚化坑顶，俯视四周上百名侥幸未死的感染平民：“不想变成怪物的，爬出来，跪好。今天，老子给你们换一条命！”</li>
+</ul>
+</li>
+</ul>
+<h4 id="阶段二基业奠定与两线交锋第6章第15章扩张与打脸">阶段二：基业奠定与两线交锋（第6章 - 第15章）· 扩张与打脸</h4>
+<ul>
+<li><strong>第6-8章：机械厂铸垒，傲娇学者的震撼</strong><ul>
+<li>陆沉率领初具雏形的“净灰死士营”占领重型机械厂，接应被财阀追捕的科学家苏清辞。</li>
+<li>苏清辞起初以为陆沉是趁乱占山为王的暴徒军阀，直到亲眼看见陆沉单手净化数名重度感染工程师，世界观彻底炸碎，连夜为陆沉通宵绘制避难所防御图纸与晶核萃取流水线。</li>
+</ul>
+</li>
+<li><strong>第9-12章：骨市黑市开张，世家的霸道封锁</strong><ul>
+<li>新手期结束，黑市交易系统开启。云顶财阀以天价垄断药物与安全屋名额，公然宣布：“平民感染者按垃圾处理，违者连坐！”</li>
+<li>陆沉反手在区域交易行挂出轰动全球的商品：<code>【无垢净髓：可遏制灰斑扩散】</code>，以物易物疯狂收割各方稀有材料与骨签律条，直接打崩世家物价盘子！</li>
+</ul>
+</li>
+<li><strong>第13-15章：斩断伸过来的狗爪，立威全城</strong><ul>
+<li>叶家派遣暗杀组与灰雾死士夜袭机械厂，意图掠夺净化秘密。</li>
+<li>陆沉一纹巅峰骨威全开，叶红衣化身暗夜修罗，反杀全歼刺客。陆沉将叶家主谋首级悬于基地大门，竖立铁血战旗：<strong>【踏入此线者死，薪火城内不弃一人】</strong>。四方流民发疯般涌来归附。</li>
+</ul>
+</li>
+</ul>
+<h4 id="阶段三邪教浮水与双潮危机第16章第24章绝境压迫">阶段三：邪教浮水与双潮危机（第16章 - 第24章）· 绝境压迫</h4>
+<ul>
+<li><strong>第16-19章：拜雾教的狂欢，人造双潮阴谋</strong><ul>
+<li>灰潮第十四天临近（归档大限日）。狂热邪教“归一教”现身，在城市地脉凿穿骨井，企图引爆蓄积的第二重死雾，让全城百万人同时沦为灰奴。</li>
+<li>陆沉截获邪教密信，发现云顶财阀高层竟然为了自身登顶世界排行榜，暗中默许邪教清洗平民，换取高阶晶核产出。</li>
+</ul>
+</li>
+<li><strong>第20-24章：三纹破境！归一度的初次惊魂</strong><ul>
+<li>陆沉日夜不停焚斑救人数万，体内骨纹暴涨至三纹【骨师】巅峰，黑白双生骨龙威震全场。</li>
+<li>但危机同时降临：陆沉惊觉自己的左小臂骨骼在深夜不自觉地化作缕缕青灰雾气，系统警告：<code>【潮主归一度达到 1.5%……警惕化雾虚无】</code>。</li>
+<li>苏清辞心疼落泪劝他停止焚斑，陆沉却狂笑吞下烈酒：“停手？老子身后站着十万人！不就是化雾么？天要吞我，我就把这贼老天的潮汐彻底撕碎！”</li>
+</ul>
+</li>
+</ul>
+<h4 id="阶段四第一卷巅峰大决战第25章第30章暴雨至暗一战封神">阶段四：第一卷巅峰大决战（第25章 - 第30章）· 暴雨至暗，一战封神</h4>
+<ul>
+<li><strong>第25-26章：至暗四小时，全城防御崩塌</strong><ul>
+<li>暴雨倾盆，末日至暗时刻降临。全城玩家属性骤跌，双重灰潮交织爆发，几十万灰奴咆哮冲击避难所。世家高层驾驶直升机仓皇弃城，甚至炸毁防空洞退路。</li>
+</ul>
+</li>
+<li><strong>第27-28章：逆行登城！这一城，我陆沉保了！</strong><ul>
+<li>绝望死寂中，陆沉一人一刀踏上中央防波大堤。背后，是三千名被他挽救的死士亲军与叶红衣、苏清辞。</li>
+<li>陆沉周身燃起滔天黑白异火，骨纹轰鸣，强行突破四纹【骨将】，双生骨翼凌空展开，照亮整个漆黑夜空！</li>
+</ul>
+</li>
+<li><strong>第29章：刀斩世家族长，火焚十里灰潮</strong><ul>
+<li>叶家族长企图绑架平民夺路而逃，被叶红衣一枪封死退路，陆沉凌空一记骨龙焚天，连人带车直接轰成虚无残渣！</li>
+<li>紧接着，陆沉引动体内两极规则，将【双相净火】推升至前所未有的极限——火海顺着暴雨在街道狂卷，十几万惨叫的感染者身上的灰斑在同一瞬间被剥离点燃，白烟冲霄而起！</li>
+</ul>
+</li>
+<li><strong>第30章：世界榜一更名！不灭薪火城立！</strong><ul>
+<li>黎明破晓，灰潮退散。十几万被救生灵齐刷刷跪伏在地，高呼城主圣明。</li>
+<li>全球系统金光浩荡，全服公告三连响：
+<code>【恭喜华夏大区玩家“陆沉”，达成“独抗双潮”不世神迹，登顶世界综合战力榜榜首！】</code>
+<code>【唯一庇护所“不灭薪火城”正式成立，受天道律令庇护！】</code></li>
+<li>陆沉收敛骨翼，站在残破城头，迎着初升旭阳，看向自己开始微微泛着雾光的指尖，第一卷至此轰然收尾！</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="六全书后续长线主线规划卷二至卷四">六、 全书后续长线主线规划（卷二至卷四）</h2>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1792642415435" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 999.7999877929688px;" viewBox="0 -66.80000114440918 999.7999877929688 624.4000244140625" role="graphics-document document" aria-roledescription="timeline"><style>#mermaid-1792642415435{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;fill:#3d4353;}#mermaid-1792642415435 .error-icon{fill:#fff;}#mermaid-1792642415435 .error-text{fill:#000000;stroke:#000000;}#mermaid-1792642415435 .edge-thickness-normal{stroke-width:2px;}#mermaid-1792642415435 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1792642415435 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1792642415435 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1792642415435 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1792642415435 .marker{fill:#9aa0ad;stroke:#9aa0ad;}#mermaid-1792642415435 .marker.cross{stroke:#9aa0ad;}#mermaid-1792642415435 svg{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;}#mermaid-1792642415435 .edge{stroke-width:3;}#mermaid-1792642415435 .section--1 rect,#mermaid-1792642415435 .section--1 path,#mermaid-1792642415435 .section--1 circle,#mermaid-1792642415435 .section--1 path{fill:#f7e3dd;}#mermaid-1792642415435 .section--1 text{fill:#8c2f20;}#mermaid-1792642415435 .node-icon--1{font-size:40px;color:#8c2f20;}#mermaid-1792642415435 .section-edge--1{stroke:#f7e3dd;}#mermaid-1792642415435 .edge-depth--1{stroke-width:17;}#mermaid-1792642415435 .section--1 line{stroke:rgb(32.2857142856, 112.9999999998, 137.2142857141);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#8c2f20;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-0 rect,#mermaid-1792642415435 .section-0 path,#mermaid-1792642415435 .section-0 circle,#mermaid-1792642415435 .section-0 path{fill:#f2d5cd;}#mermaid-1792642415435 .section-0 text{fill:#9a3a29;}#mermaid-1792642415435 .node-icon-0{font-size:40px;color:#9a3a29;}#mermaid-1792642415435 .section-edge-0{stroke:#f2d5cd;}#mermaid-1792642415435 .edge-depth-0{stroke-width:14;}#mermaid-1792642415435 .section-0 line{stroke:rgb(39.3095238095, 127.0000000001, 151.1904761906);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#9a3a29;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-1 rect,#mermaid-1792642415435 .section-1 path,#mermaid-1792642415435 .section-1 circle,#mermaid-1792642415435 .section-1 path{fill:#ecc7bc;}#mermaid-1792642415435 .section-1 text{fill:#a84533;}#mermaid-1792642415435 .node-icon-1{font-size:40px;color:#a84533;}#mermaid-1792642415435 .section-edge-1{stroke:#ecc7bc;}#mermaid-1792642415435 .edge-depth-1{stroke-width:11;}#mermaid-1792642415435 .section-1 line{stroke:rgb(47.1686046511, 139.0232558138, 166.3313953487);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#a84533;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-2 rect,#mermaid-1792642415435 .section-2 path,#mermaid-1792642415435 .section-2 circle,#mermaid-1792642415435 .section-2 path{fill:#e6b9ab;}#mermaid-1792642415435 .section-2 text{fill:#b6503d;}#mermaid-1792642415435 .node-icon-2{font-size:40px;color:#b6503d;}#mermaid-1792642415435 .section-edge-2{stroke:#e6b9ab;}#mermaid-1792642415435 .edge-depth-2{stroke-width:8;}#mermaid-1792642415435 .section-2 line{stroke:rgb(54.243119266, 151.8807339449, 182.2568807339);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#b6503d;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-3 rect,#mermaid-1792642415435 .section-3 path,#mermaid-1792642415435 .section-3 circle,#mermaid-1792642415435 .section-3 path{fill:#dfab9b;}#mermaid-1792642415435 .section-3 text{fill:#c25c46;}#mermaid-1792642415435 .node-icon-3{font-size:40px;color:#c25c46;}#mermaid-1792642415435 .section-edge-3{stroke:#dfab9b;}#mermaid-1792642415435 .edge-depth-3{stroke-width:5;}#mermaid-1792642415435 .section-3 line{stroke:rgb(65.2272727273, 163.9090909092, 194.2727272728);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#c25c46;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-4 rect,#mermaid-1792642415435 .section-4 path,#mermaid-1792642415435 .section-4 circle,#mermaid-1792642415435 .section-4 path{fill:hsl(90, 0%, 75%);}#mermaid-1792642415435 .section-4 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-4{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-4{stroke:hsl(90, 0%, 75%);}#mermaid-1792642415435 .edge-depth-4{stroke-width:2;}#mermaid-1792642415435 .section-4 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-5 rect,#mermaid-1792642415435 .section-5 path,#mermaid-1792642415435 .section-5 circle,#mermaid-1792642415435 .section-5 path{fill:hsl(120, 0%, 75%);}#mermaid-1792642415435 .section-5 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-5{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-5{stroke:hsl(120, 0%, 75%);}#mermaid-1792642415435 .edge-depth-5{stroke-width:-1;}#mermaid-1792642415435 .section-5 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-6 rect,#mermaid-1792642415435 .section-6 path,#mermaid-1792642415435 .section-6 circle,#mermaid-1792642415435 .section-6 path{fill:hsl(150, 0%, 75%);}#mermaid-1792642415435 .section-6 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-6{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-6{stroke:hsl(150, 0%, 75%);}#mermaid-1792642415435 .edge-depth-6{stroke-width:-4;}#mermaid-1792642415435 .section-6 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-7 rect,#mermaid-1792642415435 .section-7 path,#mermaid-1792642415435 .section-7 circle,#mermaid-1792642415435 .section-7 path{fill:hsl(210, 0%, 75%);}#mermaid-1792642415435 .section-7 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-7{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-7{stroke:hsl(210, 0%, 75%);}#mermaid-1792642415435 .edge-depth-7{stroke-width:-7;}#mermaid-1792642415435 .section-7 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-8 rect,#mermaid-1792642415435 .section-8 path,#mermaid-1792642415435 .section-8 circle,#mermaid-1792642415435 .section-8 path{fill:hsl(270, 0%, 75%);}#mermaid-1792642415435 .section-8 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-8{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-8{stroke:hsl(270, 0%, 75%);}#mermaid-1792642415435 .edge-depth-8{stroke-width:-10;}#mermaid-1792642415435 .section-8 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-9 rect,#mermaid-1792642415435 .section-9 path,#mermaid-1792642415435 .section-9 circle,#mermaid-1792642415435 .section-9 path{fill:hsl(300, 0%, 75%);}#mermaid-1792642415435 .section-9 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-9{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-9{stroke:hsl(300, 0%, 75%);}#mermaid-1792642415435 .edge-depth-9{stroke-width:-13;}#mermaid-1792642415435 .section-9 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-10 rect,#mermaid-1792642415435 .section-10 path,#mermaid-1792642415435 .section-10 circle,#mermaid-1792642415435 .section-10 path{fill:hsl(330, 0%, 75%);}#mermaid-1792642415435 .section-10 text{fill:#3d4353;}#mermaid-1792642415435 .node-icon-10{font-size:40px;color:#3d4353;}#mermaid-1792642415435 .section-edge-10{stroke:hsl(330, 0%, 75%);}#mermaid-1792642415435 .edge-depth-10{stroke-width:-16;}#mermaid-1792642415435 .section-10 line{stroke:rgb(63.75, 63.75, 63.75);stroke-width:3;}#mermaid-1792642415435 .lineWrapper line{stroke:#3d4353;}#mermaid-1792642415435 .disabled,#mermaid-1792642415435 .disabled circle,#mermaid-1792642415435 .disabled text{fill:lightgray;}#mermaid-1792642415435 .disabled text{fill:#efefef;}#mermaid-1792642415435 .section-root rect,#mermaid-1792642415435 .section-root path,#mermaid-1792642415435 .section-root circle{fill:hsl(0, 0%, 75%);}#mermaid-1792642415435 .section-root text{fill:#3d4353;}#mermaid-1792642415435 .icon-container{height:100%;display:flex;justify-content:center;align-items:center;}#mermaid-1792642415435 .edge{fill:none;}#mermaid-1792642415435 .eventWrapper{filter:brightness(120%);}#mermaid-1792642415435 :root{--mermaid-font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;}</style><g></g><g></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><g class="taskWrapper" transform="translate(100, 50)"><g class="timeline-node section--1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 64.60000114440918 v-59.60000114440918 q0,-5 5,-5 h180 q5,0 5,5 v64.60000114440918 H0 Z"></path><line class="node-line--1" x1="0" y1="69.60000114440918" x2="190" y2="69.60000114440918"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">卷一   暴雨烬火</tspan></text></g></g></g><g class="lineWrapper"><line x1="195" y1="119.60000114440918" x2="195" y2="507.60000686645503" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" stroke-dasharray="5,5"></line></g><g class="eventWrapper" transform="translate(100, 250)"><g class="timeline-node section--1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line--1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">重生抢占先机</tspan></text></g></g></g><g class="eventWrapper" transform="translate(100, 310)"><g class="timeline-node section--1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line--1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">救下叶红衣与苏清辞</tspan></text></g></g></g><g class="eventWrapper" transform="translate(100, 370)"><g class="timeline-node section--1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line--1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">暴雨夜刀劈世家</tspan></text></g></g></g><g class="eventWrapper" transform="translate(100, 430)"><g class="timeline-node section--1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line--1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">焚斑十万人封神榜一</tspan></text></g></g></g><g class="taskWrapper" transform="translate(300, 50)"><g class="timeline-node section-0"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 64.60000114440918 v-59.60000114440918 q0,-5 5,-5 h180 q5,0 5,5 v64.60000114440918 H0 Z"></path><line class="node-line-0" x1="0" y1="69.60000114440918" x2="190" y2="69.60000114440918"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">卷二   骨窖争锋</tspan></text></g></g></g><g class="lineWrapper"><line x1="395" y1="119.60000114440918" x2="395" y2="507.60000686645503" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" stroke-dasharray="5,5"></line></g><g class="eventWrapper" transform="translate(300, 250)"><g class="timeline-node section-0"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-0" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">深入地下五层上古骨窖</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(300, 310)"><g class="timeline-node section-0"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-0" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">破解千年前失落的'潮主断代秘闻'</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(300, 370)"><g class="timeline-node section-0"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-0" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">组建全人类反抗同盟</tspan></text></g></g></g><g class="eventWrapper" transform="translate(300, 430)"><g class="timeline-node section-0"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-0" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">骨纹突破六纹骨座</tspan></text></g></g></g><g class="taskWrapper" transform="translate(500, 50)"><g class="timeline-node section-1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 64.60000114440918 v-59.60000114440918 q0,-5 5,-5 h180 q5,0 5,5 v64.60000114440918 H0 Z"></path><line class="node-line-1" x1="0" y1="69.60000114440918" x2="190" y2="69.60000114440918"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">卷三   双潮对撞</tspan></text></g></g></g><g class="lineWrapper"><line x1="595" y1="119.60000114440918" x2="595" y2="507.60000686645503" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" stroke-dasharray="5,5"></line></g><g class="eventWrapper" transform="translate(500, 250)"><g class="timeline-node section-1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">拜雾邪教总坛引爆全球大潮</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(500, 310)"><g class="timeline-node section-1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">多国沦陷成灰国</tspan></text></g></g></g><g class="eventWrapper" transform="translate(500, 370)"><g class="timeline-node section-1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">陆沉率薪火远征军横扫旧大陆</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(500, 430)"><g class="timeline-node section-1"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-1" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">归一度飙升至45%的虚无肉身</tspan></text></g></g></g><g class="taskWrapper" transform="translate(700, 50)"><g class="timeline-node section-2"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 64.60000114440918 v-59.60000114440918 q0,-5 5,-5 h180 q5,0 5,5 v64.60000114440918 H0 Z"></path><line class="node-line-2" x1="0" y1="69.60000114440918" x2="190" y2="69.60000114440918"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em">卷四   终焉潮主</tspan></text></g></g></g><g class="lineWrapper"><line x1="795" y1="119.60000114440918" x2="795" y2="507.60000686645503" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" stroke-dasharray="5,5"></line></g><g class="eventWrapper" transform="translate(700, 250)"><g class="timeline-node section-2"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-2" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">杀入地球原初核心'白骨原'</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(700, 310)"><g class="timeline-node section-2"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-2" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">面对高维杀戮意志的灭世清洗</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(700, 370)"><g class="timeline-node section-2"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-2" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">陆沉以人道骨魂融聚万民火种</tspan><tspan x="0" dy="1.1em"></tspan></text></g></g></g><g class="eventWrapper" transform="translate(700, 430)"><g class="timeline-node section-2"><g><path id="node-undefined" class="node-bkg node-undefined" d="M0 45 v-40 q0,-5 5,-5 h180 q5,0 5,5 v45 H0 Z"></path><line class="node-line-2" x1="0" y1="50" x2="190" y2="50"></line></g><g transform="translate(95, 10)"><text dy="1em" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle"><tspan x="0" dy="1em"></tspan><tspan x="0" dy="1.1em">登临真·潮主，重定乾坤</tspan></text></g></g></g><text x="349.8999938964844" font-size="4ex" font-weight="bold" y="20">全书四卷史诗主线蓝图</text><g class="lineWrapper"><line x1="50" y1="169.6000011444092" x2="949.7999877929688" y2="169.6000011444092" stroke-width="4" stroke="black" marker-end="url(#arrowhead)"></line></g></svg></div><h3 id="卷二骨窖争锋与规则篡夺中原争霸与失落秘境">卷二：《骨窖争锋与规则篡夺》（中原争霸与失落秘境）</h3>
+<ul>
+<li><strong>核心内容</strong>：随着陆沉声名鹊起，全国各大避难所与官方残存基地投来橄榄枝或忌惮杀意。地下五层上古“骨窖”秘境开放，各方势力进入其中争夺改写规则的“律条”。</li>
+<li><strong>主线推进</strong>：陆沉在骨窖深处发现了上一纪元文明覆灭的石碑，第一次证实了“潮主不是境界，是祭品”的惊世骇俗真相；红颜苏清辞研发出便携净火核心，薪火城科技迎来跃迁。</li>
+</ul>
+<h3 id="卷三天下同悲与远征灰国邪教总决战与人类存亡">卷三：《天下同悲与远征灰国》（邪教总决战与人类存亡）</h3>
+<ul>
+<li><strong>核心内容</strong>：拜雾教教皇勾结境外基因财阀，在三大洲人为引爆“双相灰海”，数以亿计的异变灰奴汇聚成天灾海啸，世界诸国相继覆灭沦陷。</li>
+<li><strong>高光爽点</strong>：陆沉率领薪火铁骑开启全球大远征，一路攻城拔寨，手撕各路生化怪物与伪神主教。此时陆沉的【归一度】逼近50%，半边身躯已彻底化为不可名状的灰雾规则，但只要他在，人类便有最后一道不可逾越的高墙。</li>
+</ul>
+<h3 id="卷四原初大葬与万古潮主终局之战与救世成神">卷四：《原初大葬与万古潮主》（终局之战与救世成神）</h3>
+<ul>
+<li><strong>终极真相</strong>：地球本身是宇宙诞生之初的一具巨大神骸，灰潮不过是神骸呼吸翻身抖落的尘埃，杀戮游戏是高维意识清除寄生虫的程序。</li>
+<li><strong>全书大结局</strong>：<ul>
+<li>面对无可阻挡的终极归档天罚，陆沉以九阶骨冠之姿，孤身走入地心白骨原。</li>
+<li>叶红衣欲随其赴死，被陆沉轻柔推回人间：“红衣，看好我们的家。”</li>
+<li>陆沉引爆体内双相骨火，主动完成自愿的“终极归档”，以自身为熔炉将整个地球灰潮悉数炼化。</li>
+<li>当所有灰雾散去、蔚蓝苍穹重现世间，人们以为救世主已彻底消亡归于虚无；然而在薪火城顶，一缕永不熄灭的橙白暖焰悄然跳动，化作陆沉微笑的虚影，俯瞰着他亲手拯救的人间万家灯火——</li>
+<li><strong>他没有沦为天灾的傀儡，而是成为了这方人间唯一的永恒潮主！</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="七升级体系补足设定待合作确认">七、升级体系补足设定（待合作确认）</h2>
+<blockquote>
+<p><strong>说明</strong>：以下设定为漫剧转化过程中补足——原白皮书对「升级方式 / 怪物谱系 / 生存配额」仅有零散线索，现整理成可执行规则，供合作人确认后锁定。</p>
+</blockquote>
+<h3 id="71双线升级体系总览">7.1 双线升级体系总览</h3>
+<table>
+<thead>
+<tr><th align="left">线</th><th align="left">谁拥有</th><th align="left">货币 / 原料</th><th align="left">涨什么</th><th align="left">代价</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>LV 公开线</strong></td><td>全人类</td><td>雾核（杀怪掉）</td><td>经验 → LV + 四维</td><td>猎杀风险 / 每日配额</td></tr>
+<tr><td><strong>骨纹隐藏线</strong></td><td>仅主角</td><td>规则余烬（净化灰斑掠夺）+ 律条</td><td>骨性 → 纹阶</td><td>归一度抬升（化雾逼近）</td></tr>
+</tbody>
+</table>
+<h3 id="72灰潮生物谱系与九阶">7.2 灰潮生物谱系与九阶</h3>
+<table>
+<thead>
+<tr><th align="left">类</th><th align="left">来源</th><th align="left">等阶</th><th align="left">产出</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>灰奴</strong></td><td>人类灰斑感染者逾期异化</td><td>一~三阶</td><td>低阶雾核</td></tr>
+<tr><td><strong>灰兽</strong></td><td>地球动物被灰雾异化（鼠→犬→虎→象）</td><td>二~六阶</td><td>低中阶雾核</td></tr>
+<tr><td><strong>潮兽</strong></td><td>灰雾规则凝聚的异界生物（灰隙巢虫属此）</td><td>四~八阶</td><td>中高阶雾核</td></tr>
+<tr><td><strong>潮罚规则体</strong></td><td>无形无相的规则抹杀风暴</td><td>九阶</td><td>最高阶雾核</td></tr>
+</tbody>
+</table>
+<p><strong>三阶对齐</strong>：人阶 = 怪物阶 = 雾核阶（一~九阶），几阶怪掉几阶核。</p>
+<h3 id="73雾核等阶与能量">7.3 雾核等阶与能量</h3>
+<ul>
+<li>雾核＝怪物死后灰雾结晶固化的稳定形态，是能量载体，<strong>等阶→能量内嵌</strong>。</li>
+<li>能量 <strong>10 倍递进</strong>（一阶=1 … 六阶=10 万），可等价拆换：10 颗 N 阶 = 1 颗 N+1 阶。</li>
+</ul>
+<h3 id="74每日雾核配额生存口粮">7.4 每日雾核配额（生存口粮）</h3>
+<ul>
+<li><strong>低阶（一~三）与中阶（四~六）</strong>：每天须吸收 ≥ 自身等阶总能量的雾核（可等价拆换）；不达标 → 虚弱 debuff + 属性停滞（「饿」，可逆），长期 → 等级倒退。</li>
+<li><strong>高阶（七~九）豁免</strong>：改吸世界游荡的游离「雾能」；低中阶直接吸雾会中毒（故只能吃雾核结晶），高阶体质已部分雾化可吸纳。</li>
+<li>与「灰斑感染 14 天异化」（「病」，不可逆）并成<strong>双生存压力线</strong>，互不混淆。</li>
+<li><strong>势力争夺驱动力</strong>：低中阶被配额锁死、为口粮奔命；高阶超脱成统治者。雾核配额 → 后勤供给 → 势力争夺。</li>
+</ul>
+<h3 id="75律条破境体系">7.5 律条破境体系（双线共享）</h3>
+<ul>
+<li>律条＝「规则之力」载体，<strong>全人类跨档升级的刚需</strong>（不只主角）。</li>
+<li>破境点：<strong>三阶→四阶（低→中）需普通律条；六阶→七阶（中→高）需天律（上位律条）</strong>。</li>
+<li>两条线共享同一律条资源，主角可「一颗律条两条线用」。</li>
+<li>律条稀缺、人人刚需 → 抢夺律条戏码合理（卷二骨窖争锋、卷三邪教勾结）。</li>
+</ul>
+<h3 id="76骨纹进阶机制主角专属">7.6 骨纹进阶机制（主角专属）</h3>
+<table>
+<thead>
+<tr><th align="left">档位</th><th align="left">升阶条件</th></tr>
+</thead>
+<tbody>
+<tr><td>0→1 觉醒</td><td>一颗「骨核」（双相灰雾死亡缠绕凝成的规则结晶，主角重生唯一自带）</td></tr>
+<tr><td>低阶内 1→2→3</td><td>骨性每阶 +10（1→2 需 10，2→3 需 20）</td></tr>
+<tr><td>低→中 3→4</td><td>骨性 30 + 普通「律条」</td></tr>
+<tr><td>中→高 6→7</td><td>骨性 60 + 天律</td></tr>
+<tr><td>高阶内 7→8→9</td><td>规则篡夺（7→8 收缴潮罚规则体、8→9 直面神骸真相）</td></tr>
+<tr><td>9→10 潮主</td><td>自愿焚己（非正常升阶）</td></tr>
+</tbody>
+</table>
+<p>主角从<strong>零阶即豁免雾核配额</strong>（吃规则余烬，起点豁免），是「越救越强」的爽点来源。</p>
+<h3 id="77资源四件套区隔">7.7 资源四件套区隔</h3>
+<table>
+<thead>
+<tr><th align="left">资源</th><th align="left">适用对象</th><th align="left">用途</th></tr>
+</thead>
+<tbody>
+<tr><td>雾核</td><td>低中阶人人可用</td><td>口粮 / 经验（LV 线）</td></tr>
+<tr><td>雾能</td><td>高阶吸纳</td><td>替代雾核的游离能量</td></tr>
+<tr><td>规则余烬</td><td>仅主角</td><td>骨性原料（骨纹线）</td></tr>
+<tr><td>律条 / 天律</td><td>全人类刚需</td><td>双线破境道具</td></tr>
+</tbody>
+</table>
+<h3 id="78去对标化映射表">7.8 去对标化映射表</h3>
+<table>
+<thead>
+<tr><th align="left">原用词（对标残留）</th><th align="left">替换为</th></tr>
+</thead>
+<tbody>
+<tr><td>无尽杀戮（标题）</td><td>双相潮主（去前缀）</td></tr>
+<tr><td>杀戮游戏 / 无尽杀戮场</td><td>灰潮试炼 / 灰潮场</td></tr>
+<tr><td>晶核</td><td>雾核</td></tr>
+<tr><td>次元虫 / 异次元虫</td><td>灰隙巢虫</td></tr>
+</tbody>
+</table>
+
+    </article>
+    <footer class="site-foot">内容为项目企划设定资料 · 由 Markdown 构建为静态站点</footer>
+  </main>
+
+  <nav class="toc" id="toc" aria-label="本页目录">
+      <div class="toc-title">本页目录</div>
+      <ul>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%B8%80%E4%BD%9C%E5%93%81%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%8F%97%E4%BC%97%E7%88%BD%E7%82%B9%E6%A8%A1%E5%9E%8B" class="">一、 作品核心概念与受众爽点模型</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#11%E6%A0%B8%E5%BF%83%E5%8F%8D%E5%B7%AE%E4%B8%8E%E7%94%B7%E9%A2%91%E7%88%BD%E6%84%9F%E5%BC%95%E6%93%8E" class="">1.1 核心反差与男频爽感引擎</a></li>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%BA%8C%E4%B8%96%E7%95%8C%E8%A7%82%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%E4%B8%8E%E7%81%BE%E5%8F%98%E8%A7%84%E5%88%99" class="">二、 世界观底层逻辑与灾变规则</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#21%E7%81%BE%E5%8F%98%E8%B5%B7%E6%BA%90%E4%B8%8E%E2%80%9C%E5%8F%8C%E7%9B%B8%E7%81%B0%E9%9B%BE%E2%80%9D" class="">2.1 灾变起源与“双相灰雾”</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#22%E5%BD%92%E6%A1%A3%E6%9C%BA%E5%88%B6%E4%B8%8E%E9%80%BB%E8%BE%91%E6%AD%BB%E9%94%81%E9%87%8D%E7%94%9F" class="">2.2 归档机制与逻辑死锁重生</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#23%E7%81%B0%E6%BD%AE%E7%94%9F%E7%89%A9%E4%B8%8E%E7%81%BE%E5%8F%98%E8%BF%9B%E9%98%B6" class="">2.3 灰潮生物与灾变进阶</a></li>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%B8%89%E4%B8%BB%E8%A7%92%E9%9D%A2%E6%9D%BF%E4%B8%8E%E5%8F%8C%E7%9B%B8%E9%AA%A8%E7%BA%B9%E5%8D%87%E7%BA%A7%E4%BD%93%E7%B3%BB" class="">三、 主角面板与双相骨纹升级体系</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#31%E4%B8%BB%E8%A7%92%E5%8F%98%E5%BC%82%E9%9D%A2%E6%9D%BF%E9%87%8D%E7%94%9F%E5%88%9D%E6%9C%9F" class="">3.1 主角变异面板（重生初期）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#32%E9%AA%A8%E7%BA%B9%E6%88%90%E9%95%BF%E6%A2%AF%E5%BA%A6%E8%A1%A8" class="">3.2 骨纹成长梯度表</a></li>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%9B%9B%E6%A0%B8%E5%BF%83%E4%BA%BA%E7%89%A9%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8A%BF%E5%8A%9B%E7%94%9F%E6%80%81" class="">四、 核心人物矩阵与势力生态</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#41%E6%A0%B8%E5%BF%83%E4%B8%BB%E8%A7%92%E4%B8%89%E4%BA%BA%E7%BB%84%E9%93%81%E8%A1%80%E4%B8%89%E8%A7%92" class="">4.1 核心主角三人组（铁血三角）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#42%E6%A0%B8%E5%BF%83%E5%AF%B9%E7%AB%8B%E5%8A%BF%E5%8A%9B%E6%9E%B6%E6%9E%84" class="">4.2 核心对立势力架构</a></li>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E4%BA%94%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%9A%B4%E9%9B%A8%E7%83%AC%E7%81%AB%E8%AF%A6%E5%B0%BD%E8%8A%82%E5%A5%8F%E4%B8%8E%E8%8A%82%E6%8B%8D%E5%A4%A7%E7%BA%B2%E5%89%8D30%E4%B8%87%E5%AD%97" class="">五、 第一卷《暴雨烬火》详尽节奏与节拍大纲（前30万字）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%8D%B7%E5%90%8D%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%9A%B4%E9%9B%A8%E7%83%AC%E7%81%AB" class="">卷名：第一卷 · 暴雨烬火</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E7%AC%AC%E4%B8%80%E5%8D%B7%E9%80%90%E5%8D%B7%E8%8A%82%E5%A5%8F%E8%8A%82%E6%8B%8D%E8%A1%A8130%E7%AB%A0" class="">第一卷逐卷节奏节拍表（1-30章）</a></li>
+            <li class="lv2"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%85%AD%E5%85%A8%E4%B9%A6%E5%90%8E%E7%BB%AD%E9%95%BF%E7%BA%BF%E4%B8%BB%E7%BA%BF%E8%A7%84%E5%88%92%E5%8D%B7%E4%BA%8C%E8%87%B3%E5%8D%B7%E5%9B%9B" class="">六、 全书后续长线主线规划（卷二至卷四）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%8D%B7%E4%BA%8C%E9%AA%A8%E7%AA%96%E4%BA%89%E9%94%8B%E4%B8%8E%E8%A7%84%E5%88%99%E7%AF%A1%E5%A4%BA%E4%B8%AD%E5%8E%9F%E4%BA%89%E9%9C%B8%E4%B8%8E%E5%A4%B1%E8%90%BD%E7%A7%98%E5%A2%83">卷二：《骨窖争锋与规则篡夺》（中原争霸与失落秘境）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%8D%B7%E4%B8%89%E5%A4%A9%E4%B8%8B%E5%90%8C%E6%82%B2%E4%B8%8E%E8%BF%9C%E5%BE%81%E7%81%B0%E5%9B%BD%E9%82%AA%E6%95%99%E6%80%BB%E5%86%B3%E6%88%98%E4%B8%8E%E4%BA%BA%E7%B1%BB%E5%AD%98%E4%BA%A1">卷三：《天下同悲与远征灰国》（邪教总决战与人类存亡）</a></li>
+            <li class="lv3"><a href="https://bhp9ql9suum27.space.mcode.cn/#%E5%8D%B7%E5%9B%9B%E5%8E%9F%E5%88%9D%E5%A4%A7%E8%91%AC%E4%B8%8E%E4%B8%87%E5%8F%A4%E6%BD%AE%E4%B8%BB%E7%BB%88%E5%B1%80%E4%B9%8B%E6%88%98%E4%B8%8E%E6%95%91%E4%B8%96%E6%88%90%E7%A5%9E">卷四：《原初大葬与万古潮主》（终局之战与救世成神）</a></li>
+      </ul>
+    </nav>
+</div>
+
+<div class="search-modal" id="searchModal" hidden="">
+  <div class="search-box">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"></circle><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+      <input id="searchInput" type="search" placeholder="搜索全文：人物、体系、卷次、规则…" autocomplete="off">
+      <button class="icon-btn" id="searchClose" aria-label="关闭">Esc</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" aria-label="回到顶部">↑</button>
+<script>
+(function () {
+  'use strict';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  /* ---------- theme ---------- */
+  var THEME_KEY = 'sxc-theme';
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
+  if (!saved) saved = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  applyTheme(saved);
+  var themeBtn = $('#themeBtn');
+  if (themeBtn) themeBtn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    // 主题切换后重绘 Mermaid（配色由 CSS 变量驱动，需重新生成 SVG）
+    setTimeout(function () {
+      if (typeof renderMermaid === 'function') renderMermaid();
+    }, 30);
+  });
+
+  /* ---------- mobile sidebar ---------- */
+  var sidebar = $('#sidebar'), scrim = $('#scrim'), menuBtn = $('#menuBtn');
+  function closeNav() { if (sidebar) sidebar.classList.remove('open'); if (scrim) scrim.classList.remove('open'); }
+  if (menuBtn) menuBtn.addEventListener('click', function () {
+    sidebar.classList.toggle('open'); scrim.classList.toggle('open');
+  });
+  if (scrim) scrim.addEventListener('click', closeNav);
+
+  /* ---------- reading progress + back to top ---------- */
+  var bar = $('#progress'), toTop = $('#toTop');
+  function onScroll() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    if (bar) bar.style.width = p + '%';
+    if (toTop) toTop.classList.toggle('show', h.scrollTop > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (toTop) toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  /* ---------- TOC scrollspy ---------- */
+  var tocLinks = $$('.toc a');
+  if (tocLinks.length) {
+    var targets = tocLinks.map(function (a) {
+      var id = decodeURIComponent(a.getAttribute('href').slice(1));
+      return { a: a, el: document.getElementById(id) };
+    }).filter(function (t) { return t.el; });
+
+    var spy = function () {
+      var y = window.scrollY + 120, cur = -1;
+      for (var i = 0; i < targets.length; i++) {
+        if (targets[i].el.offsetTop <= y) cur = i; else break;
+      }
+      tocLinks.forEach(function (a) { a.classList.remove('active'); });
+      if (cur >= 0) targets[cur].a.classList.add('active');
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    window.addEventListener('resize', spy);
+    spy();
+  }
+
+  /* ---------- search ---------- */
+  var INDEX = null, INDEX_URL = 'assets/search-index.json';
+  var modal = $('#searchModal'), input = $('#searchInput'), results = $('#searchResults');
+  var searchBtn = $('#searchBtn'), searchClose = $('#searchClose');
+  var sel = 0, hits = [];
+
+  function loadIndex(cb) {
+    if (INDEX) return cb();
+    fetch(INDEX_URL).then(function (r) { return r.json(); }).then(function (d) {
+      INDEX = d; cb();
+    }).catch(function () {
+      results.innerHTML = '<div class="sr-empty">搜索索引加载失败</div>';
+    });
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function snippet(text, q) {
+    var i = text.toLowerCase().indexOf(q.toLowerCase());
+    if (i < 0) return esc(text.slice(0, 110));
+    var from = Math.max(0, i - 34);
+    var raw = text.slice(from, from + 130);
+    var pre = from > 0 ? '…' : '';
+    var post = from + 130 < text.length ? '…' : '';
+    var pos = i - from;
+    return pre + esc(raw.slice(0, pos)) + '<mark>' + esc(raw.slice(pos, pos + q.length)) + '</mark>' + esc(raw.slice(pos + q.length)) + post;
+  }
+
+  function search(q) {
+    if (!INDEX) return [];
+    q = q.trim();
+    if (!q) return [];
+    var ql = q.toLowerCase();
+    var out = [];
+    INDEX.forEach(function (doc) {
+      var score = 0, titleHit = false;
+      if (doc.title.toLowerCase().indexOf(ql) >= 0) { score += 60; titleHit = true; }
+      var secHit = null;
+      doc.sections.forEach(function (s) {
+        if (s.t.toLowerCase().indexOf(ql) >= 0 && !secHit) { secHit = s; score += 30; }
+      });
+      var bodyIdx = doc.text.toLowerCase().indexOf(ql);
+      if (bodyIdx >= 0) score += 10 + Math.min(20, Math.round((doc.text.length - bodyIdx) / 400));
+      if (score <= 0) return;
+      var count = doc.text.toLowerCase().split(ql).length - 1;
+      score += Math.min(15, count);
+      out.push({
+        score: score, title: titleHit ? doc.title : (secHit ? secHit.t : doc.nav),
+        badge: doc.nav, url: secHit ? secHit.u : doc.url,
+        text: snippet(doc.text, q), count: count
+      });
+    });
+    out.sort(function (a, b) { return b.score - a.score; });
+    return out.slice(0, 24);
+  }
+
+  function render(q) {
+    hits = search(q);
+    if (!q.trim()) {
+      results.innerHTML = '<div class="sr-empty">输入关键词检索全文（人名 / 体系 / 卷次 / 规则…）</div>';
+      return;
+    }
+    if (!hits.length) { results.innerHTML = '<div class="sr-empty">没有找到「' + esc(q) + '」相关内容</div>'; return; }
+    results.innerHTML = hits.map(function (h, i) {
+      return '<div class="sr-item' + (i === sel ? ' sel' : '') + '" data-url="' + esc(h.url) + '">' +
+        '<div class="sr-title"><span class="badge">' + esc(h.badge) + '</span>' + esc(h.title) +
+        (h.count > 1 ? '<span class="sr-count">· ' + h.count + ' 处</span>' : '') + '</div>' +
+        '<div class="sr-snippet">' + h.text + '</div></div>';
+    }).join('');
+  }
+
+  function openSearch() {
+    modal.hidden = false;
+    loadIndex(function () { render(input.value); });
+    input.focus();
+    input.select();
+  }
+  function closeSearch() { modal.hidden = true; }
+
+  if (searchBtn) searchBtn.addEventListener('click', openSearch);
+  if (searchClose) searchBtn && searchClose.addEventListener('click', closeSearch);
+  if (modal) modal.addEventListener('click', function (e) { if (e.target === modal) closeSearch(); });
+  if (input) input.addEventListener('input', function () { sel = 0; render(input.value); });
+
+  if (results) {
+    results.addEventListener('click', function (e) {
+      var item = e.target.closest('.sr-item');
+      if (!item) return;
+      window.location.href = item.getAttribute('data-url');
+    });
+    results.addEventListener('mousemove', function (e) {
+      var item = e.target.closest('.sr-item');
+      if (!item) return;
+      var idx = Array.prototype.indexOf.call(results.children, item);
+      if (idx !== sel) { sel = idx; render(input.value); }
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); openSearch(); return; }
+    if (e.key === '/' && document.activeElement === document.body) { e.preventDefault(); openSearch(); return; }
+    if (modal.hidden) return;
+    if (e.key === 'Escape') { closeSearch(); return; }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      if (!hits.length) return;
+      e.preventDefault();
+      sel = (sel + (e.key === 'ArrowDown' ? 1 : -1) + hits.length) % hits.length;
+      render(input.value);
+      var el = results.children[sel]; if (el) el.scrollIntoView({ block: 'nearest' });
+      return;
+    }
+    if (e.key === 'Enter' && hits[sel]) { window.location.href = hits[sel].url; }
+  });
+
+  /* ---------- copy buttons for code blocks ---------- */
+  $$('.doc pre').forEach(function (pre) {
+    var btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.type = 'button';
+    btn.textContent = '复制';
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(pre.innerText).then(function () {
+        btn.textContent = '已复制';
+        setTimeout(function () { btn.textContent = '复制'; }, 1400);
+      });
+    });
+    pre.appendChild(btn);
+  });
+
+  /* ---------- mermaid diagrams (local runtime, theme-aware) ----------
+   * 注意：Mermaid 10 的具名主题（dark / default）会忽略用户传入的 themeVariables，
+   * 只有 theme:'base' 才完全由 themeVariables 决定配色；
+   * 而 Mermaid 渲染出的 SVG 内嵌 <style> 使用 #id 选择器（特异性远高于类链），
+   * 故最终配色以 CSS 变量 + !important 覆写为准，themeVariables 仅作兜底。 */
+  var MG_NODES = $$('.mermaid');
+  var MG_SRC = MG_NODES.map(function (el) { return el.innerHTML; });
+
+  function cssVar(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name);
+    return (v && v.trim()) || fallback;
+  }
+  function mgVars() {
+    return {
+      background: cssVar('--bg', '#0b0d12'),
+      primaryColor: cssVar('--mg-node-bg', '#161a24'),
+      primaryTextColor: cssVar('--mg-fg', '#c8cede'),
+      primaryBorderColor: cssVar('--mg-node-border', '#3a4254'),
+      lineColor: cssVar('--mg-edge', '#5c6579'),
+      secondaryColor: cssVar('--bg-hover', '#1c2130'),
+      tertiaryColor: cssVar('--bg-soft', '#11141c'),
+      clusterBkg: cssVar('--mg-cluster-bg', '#11141c'),
+      clusterBorder: cssVar('--mg-cluster-border', '#232838'),
+      edgeLabelBackground: cssVar('--mg-edge-bg', '#11141c'),
+      titleColor: cssVar('--mg-fg', '#c8cede'),
+      textColor: cssVar('--mg-fg', '#c8cede'),
+      nodeBkg: cssVar('--mg-node-bg', '#161a24'),
+      nodeBorder: cssVar('--mg-node-border', '#3a4254'),
+      nodeTextColor: cssVar('--mg-fg', '#c8cede'),
+      mainBkg: cssVar('--mg-node-bg', '#161a24'),
+      cScale0: cssVar('--mg-sec-0-bg', '#2a1410'),
+      cScale1: cssVar('--mg-sec-1-bg', '#341915'),
+      cScale2: cssVar('--mg-sec-2-bg', '#3f1f1a'),
+      cScale3: cssVar('--mg-sec-3-bg', '#4a2620'),
+      cScale4: cssVar('--mg-sec-4-bg', '#55302a'),
+      cScaleLabel0: cssVar('--mg-sec-0-fg', '#f0c4b6'),
+      cScaleLabel1: cssVar('--mg-sec-1-fg', '#e8b3a3'),
+      cScaleLabel2: cssVar('--mg-sec-2-fg', '#dfa290'),
+      cScaleLabel3: cssVar('--mg-sec-3-fg', '#d6917d'),
+      cScaleLabel4: cssVar('--mg-sec-4-fg', '#cd8070')
+    };
+  }
+  function renderMermaid() {
+    if (!MG_NODES.length || !window.mermaid) return;
+    MG_NODES.forEach(function (el, i) {
+      el.removeAttribute('data-processed');
+      el.innerHTML = MG_SRC[i];
+    });
+    window.mermaid.initialize({
+      startOnLoad: false,
+      theme: 'base',
+      themeVariables: mgVars(),
+      securityLevel: 'loose',
+      fontFamily: '-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif',
+      flowchart: { curve: 'basis', htmlLabels: true }
+    });
+    window.mermaid.run({ nodes: MG_NODES }).catch(function (err) {
+      console.warn('mermaid render failed:', err);
+    });
+  }
+  renderMermaid();
+})();
+</script><div class="mermaidTooltip" style="opacity: 0;"></div>
+
+<script data-minimax-analytics="minimax-website-analytics-v1">(function(){
+"use strict";
+var t="eyJ2IjoxLCJraWQiOiJwcmUtY24tMjAyNjA4MTUtdjEiLCJiaXpfaWQiOiJNYXZpcyIsIm5vZGVfaWQiOiI0NTQ3NTM5NTA1MzYxNjUiLCJpc3N1ZWRfYXQiOjE3OTI1NzY4MjA3MDN9.sNgHrND0B_HXEFiJ4O1ZQNJGnOn1dHtV3utdZPkE6Ko",u="https://agent.minimax.cn/minimax-cloud/api/v1/website-traffic/page-views",last="";
+function path(){
+var h=window.location.hash||"",p=h.indexOf("#!")===0?h.slice(2):h.indexOf("#/")===0?h.slice(1):(window.location.pathname||"/");
+p=p.split(/[?#]/,1)[0]||"/";
+if(p.charAt(0)!=="/")p="/"+p;
+p=p.replace(/\/+/g,"/").replace(/%([0-9a-fA-F]{2})/g,function(_,x){var c=String.fromCharCode(parseInt(x,16));return /[A-Za-z0-9._~-]/.test(c)?c:"%"+x.toUpperCase();});
+if(p.length>1)p=p.replace(/\/+$/,"");
+return p||"/";
+}
+function send(){
+var p=path();if(p===last)return;last=p;
+var b="v=1&t="+encodeURIComponent(t)+"&p="+encodeURIComponent(p),ok=false;
+try{if(navigator.sendBeacon){ok=navigator.sendBeacon(u,new Blob([b],{type:"application/x-www-form-urlencoded;charset=UTF-8"}));}}catch(e){}
+if(!ok){try{fetch(u,{method:"POST",body:b,keepalive:true,mode:"no-cors",credentials:"omit",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"}});}catch(e){}}
+}
+["pushState","replaceState"].forEach(function(n){var f=history[n];if(!f)return;history[n]=function(){var r=f.apply(this,arguments);setTimeout(send,0);return r;};});
+window.addEventListener("popstate",send);window.addEventListener("hashchange",send);send();
+})();</script>
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M28.3348%207.91943C32.873%207.91949%2037.04%209.39135%2040.3124%2011.8472C40.5409%2012.0124%2040.7654%2012.1824%2040.9852%2012.3579C42.1524%2011.7112%2044.304%2010.9991%2046.5702%2012.6655C48.3992%2014.0113%2047.1291%2015.8086%2045.7957%2015.3159C45.0606%2015.0442%2044.1229%2014.5753%2043.3602%2014.6538C45.8851%2017.6085%2047.4032%2021.4033%2047.4032%2025.5415C47.4031%2029.2918%2046.153%2032.7573%2044.0399%2035.5737C43.9544%2035.689%2043.8675%2035.8033%2043.7791%2035.9165C43.7734%2035.9238%2043.7683%2035.9317%2043.7625%2035.939L44.1258%2036.2153L44.1229%2036.2163C46.3725%2037.9282%2046.7697%2041.0832%2045.0116%2043.272C43.2563%2045.4561%2040.0071%2045.8422%2037.7606%2044.1333L35.2606%2042.231C34.9961%2042.0299%2034.6857%2041.9712%2034.4002%2042.022C34.3457%2042.0362%2034.2909%2042.0502%2034.2362%2042.064C33.8268%2042.2022%2033.5038%2042.5721%2033.5038%2043.061C33.5067%2045.8275%2031.1993%2048.0717%2028.3514%2048.0806H28.326C25.4779%2048.0719%2023.1698%2045.8277%2023.1727%2043.061C23.1726%2042.5624%2022.8367%2042.1879%2022.4159%2042.0562C22.3774%2042.0464%2022.339%2042.0368%2022.3006%2042.0269C22.0086%2041.9683%2021.6878%2042.0237%2021.4159%2042.231L18.9159%2044.1333C16.6692%2045.8408%2013.4201%2045.4559%2011.6649%2043.27C9.90673%2041.0826%2010.3049%2037.9282%2012.5545%2036.2163L12.911%2035.9438C10.9449%2033.4341%209.67323%2030.4271%209.3602%2027.1636L9.34555%2026.9937C9.33836%2026.9108%209.33199%2026.8278%209.32602%2026.7446C9.32228%2026.6913%209.31852%2026.6379%209.31528%2026.5845C9.30641%2026.4417%209.30001%2026.2985%209.29477%2026.1548C9.29374%2026.1249%209.29272%2026.0949%209.29184%2026.0649C9.28644%2025.8911%209.28306%2025.7166%209.28305%2025.5415C9.28306%2021.4826%2010.7431%2017.7541%2013.1815%2014.8247C12.367%2014.3304%2011.1334%2014.9767%2010.2157%2015.3159C8.8822%2015.8087%207.58607%2013.9754%209.44223%2012.6655C12.3677%2010.6014%2014.5614%2011.8145%2015.4706%2012.5444C15.5911%2012.4448%2015.7134%2012.347%2015.8368%2012.2505C19.182%209.55277%2023.5528%207.91943%2028.3348%207.91943Z%22%20fill%3D%22%23EDEDED%22%20style%3D%22fill%3A%23EDEDED%3Bfill%3Acolor%28display-p3%200.9278%200.9278%200.9278%29%3Bfill-opacity%3A1%3B%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<div id="minimax-floating-ball" style="opacity: 1; transform: translateY(0px);">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div>
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.cn/', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+
+</body><div id="immersive-translate-popup" style="all: initial"><template shadowrootmode="open"><div id="mount" style="display: block;"><div class="imt-fb-container right imt-notranslate   " data-theme="light" style="z-index: 2147483647; pointer-events: none; right: 0px; display: flex; top: 717px;"><div class="btn-animate" style="transform: translateX(-5px); opacity: 0; pointer-events: none; filter: blur(1px); transition: opacity 110ms cubic-bezier(0.4, 0, 1, 1), filter 110ms cubic-bezier(0.4, 0, 1, 1); will-change: opacity, filter;"><div class="imt-fb-btn imt-fb-more-button imt-fb-side" style="pointer-events: none;"><div class=" btn-animate" style="position: relative; pointer-events: none; display: inline-block;"><div><svg class="imt-fb-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.65332 13.3477C10.4097 13.4245 11 14.0632 11 14.8398V18.8398L10.9922 18.9932C10.9205 19.6992 10.3593 20.2604 9.65332 20.332L9.5 20.3398H5.5C4.72334 20.3398 4.08461 19.7496 4.00781 18.9932L4 18.8398V14.8398C4 14.0114 4.67157 13.3398 5.5 13.3398H9.5L9.65332 13.3477ZM18.6533 13.3477C19.4097 13.4245 20 14.0632 20 14.8398V18.8398L19.9922 18.9932C19.9205 19.6992 19.3593 20.2604 18.6533 20.332L18.5 20.3398H14.5C13.7233 20.3398 13.0846 19.7496 13.0078 18.9932L13 18.8398V14.8398C13 14.0114 13.6716 13.3398 14.5 13.3398H18.5L18.6533 13.3477ZM5.5 14.3398C5.22386 14.3398 5 14.5637 5 14.8398V18.8398C5 19.116 5.22386 19.3398 5.5 19.3398H9.5C9.77614 19.3398 10 19.116 10 18.8398V14.8398C10 14.5637 9.77614 14.3398 9.5 14.3398H5.5ZM14.5 14.3398C14.2239 14.3398 14 14.5637 14 14.8398V18.8398C14 19.116 14.2239 19.3398 14.5 19.3398H18.5C18.7761 19.3398 19 19.116 19 18.8398V14.8398C19 14.5637 18.7761 14.3398 18.5 14.3398H14.5ZM9.65332 4.34766C10.4097 4.42445 11 5.06318 11 5.83984V9.83984L10.9922 9.99316C10.9205 10.6992 10.3593 11.2604 9.65332 11.332L9.5 11.3398H5.5C4.72334 11.3398 4.08461 10.7496 4.00781 9.99316L4 9.83984V5.83984C4 5.01142 4.67157 4.33984 5.5 4.33984H9.5L9.65332 4.34766ZM16.1484 3.18848C16.2521 2.83834 16.7479 2.83834 16.8516 3.18848L17.3281 4.79785C17.5079 5.40507 17.9648 5.89104 18.5596 6.1084L20.0576 6.65625C20.3786 6.77361 20.3785 7.22732 20.0576 7.34473L18.5596 7.89258C17.9648 8.10991 17.5079 8.59598 17.3281 9.20312L16.8516 10.8125C16.7479 11.1626 16.2521 11.1626 16.1484 10.8125L15.6719 9.20312C15.4921 8.59598 15.0352 8.10991 14.4404 7.89258L12.9424 7.34473C12.6215 7.22732 12.6214 6.77361 12.9424 6.65625L14.4404 6.1084C15.0352 5.89104 15.4921 5.40507 15.6719 4.79785L16.1484 3.18848ZM5.5 5.33984C5.22386 5.33984 5 5.5637 5 5.83984V9.83984C5 10.116 5.22386 10.3398 5.5 10.3398H9.5C9.77614 10.3398 10 10.116 10 9.83984V5.83984C10 5.5637 9.77614 5.33984 9.5 5.33984H5.5Z" fill="#ED6D8F"></path></svg></div></div></div></div><div hidden="" class="imt-no-events " id="manga-button" style="position: relative;"><div class=" " style="position: relative; pointer-events: all; display: inline-block;"><div><div class="imt-manga-button btn-animate" style="opacity: 0.5; transform: translateX(2px);"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" style="vertical-align: middle;"><path d="M14.8853 4.92364C14.8853 4.92364 16.3905 10.4362 22.6668 4C22.6668 4 20.3381 10.8907 25.3364 10.0843C25.3364 10.0843 22.0563 15.6994 29 18.0599C29 18.0599 22.9934 19.306 21.1617 28C21.1617 28 17.7679 24.54 14.8853 27.3549C14.8853 27.3549 13.3233 23.5724 7.33097 26.27C7.33097 26.27 10.1141 20.6549 4.83179 21.0507C4.83179 21.0507 7.16057 18.8955 3 15.9047C3 15.9047 7.50137 16.1833 6.33697 11.7117C6.33697 11.7117 10.0005 12.3421 8.66576 6.82957C8.65156 6.81491 12.4855 9.80574 14.8853 4.92364Z" fill="#ED6D8F"></path><path d="M20.8599 13.7022C20.885 13.1361 20.9543 12.5713 20.9959 12.0052C21.0337 11.568 20.8107 11.2794 20.3876 11.18C20.0759 11.1013 19.7508 11.0867 19.433 11.137C19.1951 11.1945 18.9542 11.2396 18.7113 11.2721C18.2403 11.3028 17.9973 11.5275 17.9796 11.988C17.977 12.0833 17.9596 12.1777 17.928 12.268C17.3034 13.9102 16.6774 15.5499 16.0503 17.1873C16.0301 17.2401 16.0062 17.2904 15.9671 17.3776C15.7291 16.8975 15.4281 16.4898 15.2745 15.9986C14.8073 14.5152 14.3186 13.033 13.8312 11.5594C13.6826 11.1112 13.3489 10.9344 12.8754 11.0216C12.7889 11.0365 12.7008 11.0398 12.6134 11.0314C12.2241 10.9938 11.8311 11.0404 11.4623 11.1677C11.0946 11.2991 10.9498 11.557 11.0152 11.9254C11.0428 12.0371 11.0643 12.1503 11.0795 12.2643C11.1223 13.1902 11.1777 14.1087 11.2054 15.0321C11.257 16.7992 11.2117 18.5651 11.0858 20.3284C11.0644 20.6354 11.0304 20.9424 11.0228 21.2494C11.0115 21.6092 11.1613 21.7811 11.5266 21.8143C11.9976 21.8573 12.4711 21.8708 12.9421 21.9088C13.0309 21.9201 13.121 21.9003 13.1962 21.8528C13.2714 21.8053 13.3268 21.7334 13.3527 21.6497C13.3996 21.5394 13.4252 21.4216 13.4282 21.3022C13.4295 20.8258 13.4207 20.3493 13.4081 19.8741C13.393 19.3264 13.3917 18.7763 13.3438 18.231C13.2857 17.5839 13.266 16.934 13.2847 16.2847C13.2847 16.2466 13.291 16.2073 13.2985 16.1312C13.3338 16.2024 13.3514 16.2356 13.3665 16.2712C13.9017 17.5228 14.3617 18.8037 14.7443 20.1074C14.7928 20.2421 14.7928 20.3889 14.7443 20.5237C14.6322 20.8196 14.7141 21.037 14.9659 21.1377C15.4445 21.3268 15.9331 21.4926 16.4155 21.6731C16.4865 21.7033 16.566 21.7091 16.6408 21.6895C16.7157 21.6698 16.7815 21.6259 16.8273 21.565C16.9085 21.4643 16.9743 21.3526 17.0225 21.2335C17.0537 21.1374 17.0798 21.0399 17.1006 20.9412C17.3185 20.2425 17.5653 19.5499 17.7517 18.8438C17.9785 17.9723 18.2624 17.1158 18.6018 16.2798C18.6201 16.2439 18.6411 16.2094 18.6647 16.1766C18.6761 16.2319 18.6761 16.254 18.6761 16.2761C18.6345 17.59 18.5955 18.8978 18.5501 20.2056C18.5363 20.5949 18.491 20.9829 18.4809 21.3722C18.4721 21.705 18.6207 21.8708 18.9557 21.9002C19.4355 21.9432 19.9191 21.9592 20.4002 21.9973C20.4888 22.0079 20.5784 21.9875 20.653 21.9399C20.7277 21.8922 20.7827 21.8203 20.8082 21.7369C20.8531 21.6305 20.8766 21.5167 20.8775 21.4017C20.88 20.7668 20.8674 20.132 20.8674 19.4971C20.8662 19.2846 20.8687 19.0722 20.8523 18.8622C20.8158 18.3968 20.7264 17.9314 20.7339 17.4685C20.7515 16.2122 20.8044 14.9572 20.8599 13.7022Z" fill="white"></path></svg></div></div></div></div></div><div style="display: flex; align-items: center; flex-direction: row; gap: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" style="display: block; opacity: 0;"><g clip-path="url(#clip0_38845_9816)"><path d="M7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14Z" fill="#B1B1B1" fill-opacity="0.4"></path><path d="M6.11754 7.00052L4.18254 5.06452C4.06786 4.94725 4.00406 4.78948 4.00498 4.62546C4.00589 4.46144 4.07145 4.3044 4.18744 4.18841C4.30342 4.07243 4.46046 4.00687 4.62448 4.00595C4.7885 4.00503 4.94627 4.06884 5.06354 4.18352L6.99954 6.11852L8.93554 4.18352C8.99315 4.1246 9.06188 4.07771 9.13774 4.04554C9.2136 4.01337 9.29508 3.99656 9.37748 3.9961C9.45988 3.99564 9.54155 4.01153 9.61777 4.04285C9.69398 4.07417 9.76323 4.1203 9.82149 4.17857C9.87976 4.23683 9.92589 4.30608 9.95721 4.38229C9.98853 4.45851 10.0044 4.54018 10.004 4.62258C10.0035 4.70497 9.98669 4.78646 9.95452 4.86232C9.92235 4.93818 9.87545 5.00691 9.81654 5.06452L7.88154 7.00052L9.81654 8.93652C9.93122 9.05379 9.99502 9.21155 9.99411 9.37557C9.99319 9.5396 9.92763 9.69664 9.81164 9.81262C9.69566 9.9286 9.53862 9.99417 9.3746 9.99508C9.21058 9.996 9.05281 9.9322 8.93554 9.81752L6.99954 7.88252L5.06354 9.81752C5.00593 9.87643 4.93721 9.92333 4.86135 9.9555C4.78549 9.98767 4.704 10.0045 4.6216 10.0049C4.5392 10.0054 4.45753 9.9895 4.38131 9.95818C4.3051 9.92686 4.23585 9.88073 4.17759 9.82247C4.11932 9.7642 4.0732 9.69496 4.04188 9.61874C4.01056 9.54253 3.99467 9.46086 3.99513 9.37846C3.99559 9.29606 4.01239 9.21457 4.04456 9.13871C4.07673 9.06285 4.12363 8.99413 4.18254 8.93652L6.11754 7.00052Z" fill="white"></path></g><defs><clippath id="clip0_38845_9816"><rect width="14" height="14" fill="white"></rect></clippath></defs></svg><div style="position: relative;"><div class="imt-fb-btn right btn-animate  " dir="ltr" style="opacity: 0.5;"><div class=" " style="position: relative; pointer-events: all; display: inline-block;"><div><div class="imt-fb-btn-content"><svg class="imt-fb-logo-img imt-fb-logo-img-big-bg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14Z" fill="#ED6D8F"></path><path d="M7.30921 15.6381C7.53044 15.6381 7.70979 15.8175 7.70979 16.0387V19.0088C7.70979 19.934 8.45993 20.684 9.38526 20.684H11.7557C11.9769 20.684 12.1562 20.8634 12.1562 21.0846V22.152C12.1562 22.3732 11.9769 22.5526 11.7557 22.5526H9.38526C7.42782 22.5526 5.84099 20.966 5.84099 19.0088V16.0387C5.84099 15.8175 6.02034 15.6381 6.24157 15.6381H7.30921ZM18.9876 12.6944C19.1515 12.6944 19.2989 12.7943 19.3597 12.9466L22.9711 22.0036C23.076 22.2667 22.8822 22.5526 22.599 22.5526H21.4672C21.3016 22.5526 21.153 22.4506 21.0934 22.2961L20.2724 20.1673C20.2128 20.0128 20.0643 19.9108 19.8986 19.9108H16.7508C16.5852 19.9108 16.4366 20.0128 16.377 20.1673L15.556 22.2961C15.4964 22.4506 15.3478 22.5526 15.1822 22.5526H14.0504C13.7672 22.5526 13.5734 22.2667 13.6783 22.0036L17.2897 12.9466C17.3505 12.7943 17.4979 12.6944 17.6618 12.6944H18.9876ZM18.5116 15.6017C18.4456 15.4308 18.2038 15.4308 18.1378 15.6017L17.3016 17.7699C17.251 17.9011 17.3478 18.0423 17.4885 18.0423H19.1609C19.3016 18.0423 19.3984 17.9012 19.3478 17.7699L18.5116 15.6017ZM9.69589 5.30028C9.79943 4.8999 10.368 4.89991 10.4715 5.30028L11.1086 7.76368C11.3244 8.59845 11.9396 9.27221 12.7513 9.56299L14.9019 10.3334C15.2559 10.4602 15.2559 10.9608 14.9019 11.0876L12.7513 11.8581C11.9396 12.1489 11.3244 12.8226 11.1086 13.6574L10.4715 16.1208C10.368 16.5212 9.79943 16.5212 9.69589 16.1208L9.05884 13.6574C8.84297 12.8226 8.22786 12.1489 7.41615 11.8581L5.26548 11.0876C4.91151 10.9608 4.91151 10.4602 5.26548 10.3334L7.41615 9.56299C8.22786 9.27221 8.84297 8.59844 9.05884 7.76368L9.69589 5.30028ZM18.0064 6.20485C19.9639 6.20485 21.5507 7.79145 21.5507 9.74861V11.281C21.5507 11.5022 21.3713 11.6816 21.1501 11.6816H20.0825C19.8612 11.6816 19.6819 11.5022 19.6819 11.281V9.74861C19.6819 8.82341 18.9318 8.07338 18.0064 8.07338H14.4343C14.2131 8.07338 14.0337 7.89403 14.0337 7.6728V6.60543C14.0337 6.3842 14.2131 6.20486 14.4343 6.20485H18.0064Z" fill="white"></path></svg></div></div></div></div><div title="关闭悬浮球" class="imt-fb-close-button btn-animate " style="opacity: 0; pointer-events: none; filter: blur(1px); transition: opacity 110ms cubic-bezier(0.4, 0, 1, 1), filter 110ms cubic-bezier(0.4, 0, 1, 1); will-change: opacity, filter;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g clip-path="url(#clip0_38845_9816)"><path d="M7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14Z" fill="#B1B1B1" fill-opacity="0.4"></path><path d="M6.11754 7.00052L4.18254 5.06452C4.06786 4.94725 4.00406 4.78948 4.00498 4.62546C4.00589 4.46144 4.07145 4.3044 4.18744 4.18841C4.30342 4.07243 4.46046 4.00687 4.62448 4.00595C4.7885 4.00503 4.94627 4.06884 5.06354 4.18352L6.99954 6.11852L8.93554 4.18352C8.99315 4.1246 9.06188 4.07771 9.13774 4.04554C9.2136 4.01337 9.29508 3.99656 9.37748 3.9961C9.45988 3.99564 9.54155 4.01153 9.61777 4.04285C9.69398 4.07417 9.76323 4.1203 9.82149 4.17857C9.87976 4.23683 9.92589 4.30608 9.95721 4.38229C9.98853 4.45851 10.0044 4.54018 10.004 4.62258C10.0035 4.70497 9.98669 4.78646 9.95452 4.86232C9.92235 4.93818 9.87545 5.00691 9.81654 5.06452L7.88154 7.00052L9.81654 8.93652C9.93122 9.05379 9.99502 9.21155 9.99411 9.37557C9.99319 9.5396 9.92763 9.69664 9.81164 9.81262C9.69566 9.9286 9.53862 9.99417 9.3746 9.99508C9.21058 9.996 9.05281 9.9322 8.93554 9.81752L6.99954 7.88252L5.06354 9.81752C5.00593 9.87643 4.93721 9.92333 4.86135 9.9555C4.78549 9.98767 4.704 10.0045 4.6216 10.0049C4.5392 10.0054 4.45753 9.9895 4.38131 9.95818C4.3051 9.92686 4.23585 9.88073 4.17759 9.82247C4.11932 9.7642 4.0732 9.69496 4.04188 9.61874C4.01056 9.54253 3.99467 9.46086 3.99513 9.37846C3.99559 9.29606 4.01239 9.21457 4.04456 9.13871C4.07673 9.06285 4.12363 8.99413 4.18254 8.93652L6.11754 7.00052Z" fill="white"></path></g><defs><clippath id="clip0_38845_9816"><rect width="14" height="14" fill="white"></rect></clippath></defs></svg></div></div><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" style="display: none; opacity: 0;"><g clip-path="url(#clip0_38845_9816)"><path d="M7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14Z" fill="#B1B1B1" fill-opacity="0.4"></path><path d="M6.11754 7.00052L4.18254 5.06452C4.06786 4.94725 4.00406 4.78948 4.00498 4.62546C4.00589 4.46144 4.07145 4.3044 4.18744 4.18841C4.30342 4.07243 4.46046 4.00687 4.62448 4.00595C4.7885 4.00503 4.94627 4.06884 5.06354 4.18352L6.99954 6.11852L8.93554 4.18352C8.99315 4.1246 9.06188 4.07771 9.13774 4.04554C9.2136 4.01337 9.29508 3.99656 9.37748 3.9961C9.45988 3.99564 9.54155 4.01153 9.61777 4.04285C9.69398 4.07417 9.76323 4.1203 9.82149 4.17857C9.87976 4.23683 9.92589 4.30608 9.95721 4.38229C9.98853 4.45851 10.0044 4.54018 10.004 4.62258C10.0035 4.70497 9.98669 4.78646 9.95452 4.86232C9.92235 4.93818 9.87545 5.00691 9.81654 5.06452L7.88154 7.00052L9.81654 8.93652C9.93122 9.05379 9.99502 9.21155 9.99411 9.37557C9.99319 9.5396 9.92763 9.69664 9.81164 9.81262C9.69566 9.9286 9.53862 9.99417 9.3746 9.99508C9.21058 9.996 9.05281 9.9322 8.93554 9.81752L6.99954 7.88252L5.06354 9.81752C5.00593 9.87643 4.93721 9.92333 4.86135 9.9555C4.78549 9.98767 4.704 10.0045 4.6216 10.0049C4.5392 10.0054 4.45753 9.9895 4.38131 9.95818C4.3051 9.92686 4.23585 9.88073 4.17759 9.82247C4.11932 9.7642 4.0732 9.69496 4.04188 9.61874C4.01056 9.54253 3.99467 9.46086 3.99513 9.37846C3.99559 9.29606 4.01239 9.21457 4.04456 9.13871C4.07673 9.06285 4.12363 8.99413 4.18254 8.93652L6.11754 7.00052Z" fill="white"></path></g><defs><clippath id="clip0_38845_9816"><rect width="14" height="14" fill="white"></rect></clippath></defs></svg></div><div class="btn-animate" style="margin-top: 10px; transform: translateX(-5px); opacity: 0; pointer-events: none; filter: blur(1px); transition: opacity 110ms cubic-bezier(0.4, 0, 1, 1), filter 110ms cubic-bezier(0.4, 0, 1, 1); will-change: opacity, filter;"><div class=" btn-animate" style="position: relative; pointer-events: none; display: inline-block;"><div><div class="imt-fb-round-button"><svg class="imt-fb-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="width: 24px; height: 24px;"><path d="M17 8.66797H11.375" stroke="#ED6D8F" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.625 15.332L7 15.332" stroke="#ED6D8F" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.125 17C16.1605 17 17 16.1605 17 15.125C17 14.0895 16.1605 13.25 15.125 13.25C14.0895 13.25 13.25 14.0895 13.25 15.125C13.25 16.1605 14.0895 17 15.125 17Z" stroke="#ED6D8F" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.875 10.75C9.91053 10.75 10.75 9.91053 10.75 8.875C10.75 7.83947 9.91053 7 8.875 7C7.83947 7 7 7.83947 7 8.875C7 9.91053 7.83947 10.75 8.875 10.75Z" stroke="#ED6D8F" stroke-linecap="round" stroke-linejoin="round"></path><rect x="3" y="4" width="18" height="16" rx="1.66667" stroke="#ED6D8F"></rect></svg></div></div></div></div><div class="btn-animate" style="margin-top: 10px; transform: translateX(-5px); opacity: 0; pointer-events: none; filter: blur(1px); transition: opacity 110ms cubic-bezier(0.4, 0, 1, 1), filter 110ms cubic-bezier(0.4, 0, 1, 1); will-change: opacity, filter;"><div class=" btn-animate" style="position: relative; pointer-events: none; display: inline-block;"><div><div class="imt-fb-round-button"><svg class="imt-fb-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><mask id="mask0_43829_2633" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20" style="mask-type: alpha;"><rect width="20" height="20" fill="#D9D9D9"></rect></mask><g mask="url(#mask0_43829_2633)"><path d="M9.99546 12.2609C10.1639 12.2609 10.305 12.2055 10.4188 12.0946C10.5327 11.9838 10.5896 11.8441 10.5896 11.6755C10.5896 11.507 10.5342 11.3659 10.4234 11.2521C10.3124 11.1384 10.1727 11.0815 10.0042 11.0815C9.83574 11.0815 9.69463 11.1369 9.58088 11.2478C9.46699 11.3586 9.41005 11.4982 9.41005 11.6667C9.41005 11.8353 9.46546 11.9765 9.5763 12.0903C9.68727 12.204 9.82699 12.2609 9.99546 12.2609ZM9.99546 10.1936C10.148 10.1936 10.2771 10.1418 10.3828 10.0382C10.4886 9.93443 10.5415 9.80568 10.5415 9.65193V5.20318C10.5415 5.04943 10.49 4.92075 10.3871 4.81713C10.2844 4.71338 10.1567 4.66151 10.0042 4.66151C9.85171 4.66151 9.72261 4.71338 9.61692 4.81713C9.51109 4.92075 9.45817 5.04943 9.45817 5.20318V9.65193C9.45817 9.80568 9.50963 9.93443 9.61255 10.0382C9.71532 10.1418 9.84296 10.1936 9.99546 10.1936ZM5.03192 14.5846L3.55359 16.063C3.34262 16.2739 3.10032 16.3221 2.82671 16.2076C2.55324 16.093 2.4165 15.8864 2.4165 15.5878V3.75776C2.4165 3.38262 2.54602 3.06554 2.80505 2.80651C3.06407 2.54748 3.38116 2.41797 3.7563 2.41797H16.2434C16.6185 2.41797 16.9356 2.54748 17.1946 2.80651C17.4537 3.06554 17.5832 3.38262 17.5832 3.75776V13.2448C17.5832 13.62 17.4537 13.9371 17.1946 14.1961C16.9356 14.4551 16.6185 14.5846 16.2434 14.5846H5.03192ZM4.58317 13.5013H16.2434C16.3075 13.5013 16.3663 13.4746 16.4196 13.4211C16.4731 13.3678 16.4998 13.309 16.4998 13.2448V3.75776C16.4998 3.69359 16.4731 3.63484 16.4196 3.58151C16.3663 3.52804 16.3075 3.5013 16.2434 3.5013H3.7563C3.69213 3.5013 3.63338 3.52804 3.58005 3.58151C3.52657 3.63484 3.49984 3.69359 3.49984 3.75776V14.5928L4.58317 13.5013Z" fill="#ED6D8F"></path></g></svg></div></div></div></div><div hidden="" id="immersive-translate-popup-overlay" class="immersive-translate-popup-overlay"><div class="immersive-translate-popup-wrapper" style="position: fixed; bottom: 30px; right: 65px;"></div></div></div></div></template></div></html>
